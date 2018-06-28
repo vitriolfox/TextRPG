@@ -1,0 +1,37 @@
+div{
+    width: 740px;
+    margin: 20px auto;
+}
+h1,
+h2,
+p,
+a,
+li{
+    color: rgba(0, 0, 0, 0.8)
+}
+h1,
+h2{
+    font-family: 'Oswald', sans-serif;
+}
+h1{
+    font-size: 40px;
+    margin: 0 0;
+}
+h2{
+    font-size: 32px;
+    margin-top: 50px;
+}
+p,
+li{
+    font-family: 'Roboto Slab', serif;
+}
+p{
+    line-height: 1.58;
+}
+img{
+    width: 100%;
+    margin-top: 50px;
+}
+ul{
+    margin-bottom: 50px;
+}

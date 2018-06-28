@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formok</h1>
+    <form>
+        <label for="name">Nev</label>
+        <input type="text" name="" id="name" value="Zsolti">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="user@domain.hu" required>
+
+        <label for="password">Jelszo</label>
+        <input type="password" name="password" id="password" required>
+
+        <label for="phone">Telefon</label>
+        <input type="tel" name="phone" id="phone">
+
+        <label for="foot-size">Labmeret</label>
+        <input type="number" id="foot-size" value="52" disabled>
+
+        <!-- <label for="color">Szin</label>
+        <input type="color" name="color" id="color"> -->
+        <fieldset class="checkbox-fieldset">
+            <legend>Szin</legend>
+            <input type="checkbox" name="color" value="red" id="color-red" required>
+            <label for="color-red">Piros</label>
+
+            <input type="checkbox" name="color" value="green" id="color-green" required>
+            <label for="color-green">Zold</label>
+            
+            <input type="checkbox" name="color" value="blue" id="color-blue" required>
+            <label for="color-blue">Kek</label>
+
+        </fieldset>
+
+        <fieldset class="radio-fieldset">
+            <legend>Anyag</legend>
+            <input type="radio" name="material" value="material-leather" id="material-leather">
+            <label for="material-leather">bor</label>
+
+            <input type="radio" name="material" value="material-wood" id="material-wood">
+            <label for="material-wood">fa</label>
+            
+            <input type="radio" name="material" value="material-iron" id="material-iron">
+            <label for="material-iron">vas</label>
+        </fieldset>
+
+        <label for="gift">Ajandek</label>
+        <select name="gift" id="gift">
+            <option value="match-set">Gyufakeszlet</option>
+            <option value="shoe-spoon">Cipokanal</option>
+            <option value="glass-case">Szemuvegtokok</option>
+        </select>
+
+        <label for="comment">Megjegyzes</label>
+        <textarea name="comment" id="comment" cols="60" rows="10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur reiciendis illum vitae provident enim aperiam dolorum ut, sapiente a debitis.</textarea>
+
+        <label for="delivery-time">Szallitasi ido</label>
+        <input type="date" id="deliveri-time">
+
+        <input type="submit" value="Kuldes">
+        
+
+    </form>
+</body>
+</html>

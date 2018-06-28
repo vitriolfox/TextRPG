@@ -1,0 +1,42 @@
+tr:after {
+    content: '\00a0';
+    display: table-cell;
+    padding: 1em 0;
+}
+
+table{
+    width: 760px;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+thead{
+    background-color: #222255;
+    color: white;
+}
+
+td{
+    border: 1px solid #12AFA2;
+    padding: 10px;
+}
+
+.first-column{
+    background-color: #12AFA2;
+    color: white;
+    width: 130px;
+}
+
+.second-column{
+    background-color: #D1CDBF;
+    width: 130px;
+}
+
+.grey{
+    background-color: #D1CDBF
+}
+
+.yellow{
+    background-color: #E4C970
+}

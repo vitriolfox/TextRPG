@@ -1,0 +1,9 @@
+0;Woods
+1;Grassfields
+2;Roads
+3;Woods
+4;Grassfields
+5;Cave
+6;Grassfields
+7;Rivers
+8;Roads

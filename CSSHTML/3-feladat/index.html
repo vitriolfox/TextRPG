@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bodycont">
+    <h1>HTML</h1>
+    <hr>
+    <h3>A Wikipédiából, a szabad enciklopédiából</h3>
+
+    <p>A <strong>HTML</strong> (angolul: <strong>H</strong> yper <strong>T</strong> ext <strong>M</strong> arkup <strong>L</strong> anguage=hiperszöveges jelölőnyelv)
+         egy leíró nyelv, melyet <a href="https://hu.wikipedia.org/wiki/Weboldal" target="_blank">weboldalak</a>  készítéséhez fejlesztettek ki, és mára
+         már internetes szabvánnyá vált a W3C (World Wide Web Consortium) támogatásával. 
+         Az aktuális változata a 4.01, mely az SGML általános jelölőnyelv egy konkrét 
+         alkalmazása (azaz minden 4.01-es HTML dokumentum egyben az SGML dokumentumszabványnak 
+         is meg kell, hogy feleljen). Ezt tervek szerint lassan kiszorította volna az XHTML 
+         (ami a szintén SGML alapú XML leíró nyelven alapul), de
+         az is lehetséges, hogy a HTML 5 veszi át a helyét.</p>
+
+        <div class="cont">
+         <h4>Tartalomjegyzék</h4>
+         <ul>
+            <li><a href="#link1">1	Használata</a></li>
+            <li><a href="#link2">2	Szimbólumok, tartalom</a></li>
+            <li><a href="#link3">3	Felépítés
+                <ul><a href="#link31">3.1	Karakterkódolás
+                    <li><a href="#link311">3.1.1	Numerikus karakter referenciák</a></li>
+                    <li><a href="#link312">3.1.2	Karakter egyedhivatkozások</a></li>
+                </a></ul>
+            </a></li>
+         </ul>
+        </div>
+
+    <h2 id="link1">Használata</h2>
+    <hr>
+    <p>HTML általában szöveges állományokban található meg olyan számítógépeken, 
+        melyek az internethez kapcsolódnak. Ezek az állományok tartalmazzák azokat 
+        a szimbólumokat, amelyek a megjelenítő programnak leírják, hogyan is kell 
+        megjeleníteni illetve feldolgozni az adott állomány tartalmát. Megjelenítő 
+        program lehet egy webböngésző (angolul: web browser), aural böngésző (olyan, 
+        amelyik a felhasználónak felolvassa a megjelenítendő szöveget), braille olvasó, 
+        amely konvertálja a szöveget braille "formátumba", levelező program 
+        (mint például: Mozilla Thunderbird, Microsoft Outlook, Eudora stb.), 
+        valamint egyéb eszközök, például mobiltelefon.</p>
+
+    <h2 id="link2">Szimbólumok, tartalom</h2>
+    <hr>
+    <p>Négyfajta szimbólum (leíró elem) található meg a HTML-ben:
+        strukturális elemek, amelyek leírják az adott szöveg
+        "célját" például &lt;h1&gt;Téma 1&lt;/h1&gt; mint első szintű címsor (alcím).
+        prezentációs szimbólumok, amelyek leírják, hogy az adott szöveg
+        hogyan nézzen ki: például &lt;b&gt;vastag&lt;/b&gt; vastag kinézetet eredményez.
+        (Ez a forma azonban ma már elavultnak számít, helyette a CSS használata 
+        javasolt, ugyanis a legújabb irányelv szerint szét kell választani a tartalmat 
+        (amit a HTML kódol) és a formát (amit CSS-ben szokás kódolni), és ezáltal 
+        mindenki számára elérhetővé tehetőek a weblapok: felolvasó gépeknek, 
+        amit a gyengén látók használnak, szöveges böngészőknek, és nyomtatóbarát 
+        verziót is könnyebb készíteni.) hiperszöveg (hypertext) elemek, amelyek 
+        segítségével kapcsolat létesíthető a dokumentum egyes elemei és más 
+        dokumentumok között (például a &lt;a href="https://hu.wikipedia.org/"&gt;Wikipedia&lt;/a&gt; 
+        a Wikipedia szót mint egy kapcsolatot (angol szóval: link) a megadott URL-hez 
+        jeleníti meg) eszköz elemek, amelyek segítségével gombok, listák, beviteli 
+        mezők hozhatók létre.</p>
+
+    <h2 id="link3">Felépítés</h2>
+    <hr>
+    <p>Egy HTML állomány három fő részre bontható:</p>
+    <ol>
+        <li>A Dokumentum Típus Definíció az állomány legelején, pl:
+                &lt;!DOCTYPE html&gt;</li>
+        <li>a HTML fejléc &lt;head&gt;&lt;/head&gt;, ami technikai és dokumentációs 
+            adatokat tartalmaz, amelyeket az internet böngésző nem jelenít meg, 
+            tehát átlag felhasználó ezeket nem látja és</li>
+            <li>a HTML törzs &lt;body&gt;&lt;/body&gt;, amely a megjelenítendő
+                információkat tartalmazza.</li>
+    </ol>
+
+    <h3 id="link31">Karakterkódolás</h3>
+    <p>Egy HTML dokumentum alapértelmezésként ISO-8859-1, azaz nyugat-európai kódolást 
+        használ <sup> [1]</sup> Gyakran előforduló hiba szokott lenni, hogy nincs beállítva a charset 
+        paraméter a fejléc content attribútumában, annak ellenére, hogy a dokumentum 
+        nem nyugat-európai kódolású szöveget tartalmaz. Magyar nyelvű oldalak esetén 
+        ilyenkor gyakran az „ő” és „ű” betűk helyett „õ” és „û” karaktereket látunk 
+        (ekkor valószínűleg "ISO-8859-2" vagy "windows-1250" volna a helyes charset 
+        érték), de az is lehet, hogy minden ékezetes betű teljesen olvashatatlanná 
+        válik, betűszemetet eredményezve (ha például a megjelenítendő szöveg UTF-8 
+        kódolású). A charset paraméter értékeként több száz kódolás és érvényes 
+        alternatív név (alias) megadható.[2]</p>
+
+    <h4 id="link311">Numerikus karakter referenciák</h4>
+    <p>Akármilyen kódolást használ is egy HTML dokumentum, bármilyen Unicode karakter 
+        megjeleníthető a szövegben annak UCS kódjával „&#” és „;” jelek között. Például 
+        a magyar kis „ő” betű UCS kódja a decimális 337 (vagy hexadecimális 151), 
+        ezért függetlenül a használt kódolástól, a HTML dokumentumban elhelyezett 
+        &#337; vagy &#x151; mindig az „ő” betűt fogja megjeleníteni.</p>
+
+    <h4 id="link312">Karakter egyedhivatkozások</h4>
+    <p>Searchtool right.svg Bővebben: SGML entitás Az SGML számos Unicode karakterhez 
+        definiál egyedi megnevezéseket,[3][4] azonban a HTML a lehetséges SGML 
+        egyedeknek csak egy részét használja[5] (a használt egyedeket a dokumentum 
+        DTD-jében kell megadni, és a HTML 4.01-es verziójáig ez nem tartalmazza a 
+        közép-európai karaktereket). Emiatt a magyar ékezetes karakterek közül is 
+        csak azokra lehetséges SGML egyedhivatkozást megadni, amelyek a nyugat-európai 
+        kódkészletben is megtalálhatók. Vagyis hiába definiálja az SGML például „ő” 
+        betűhöz az „odblac” nevet, hivatalosan azt egy böngészőnek nem kell tudnia 
+        megjeleníteni egy 4.01-es HTML dokumentum esetén.</p>
+
+    </div>
+</body>
+</html>

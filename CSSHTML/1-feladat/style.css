@@ -1,0 +1,34 @@
+h1,
+h2,
+.photo-comment{
+    color: #323232;
+    font-size: 13px;
+}
+
+p, h2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#title {
+    font-family: 'Crete Round', serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 26px;
+}
+div{
+    width: 800px;
+    margin: 20px auto;
+    /* border: 5px solid red;
+    padding: 20px; */
+}
+img{
+    width: 100%;
+}
+span{
+    color: red
+}

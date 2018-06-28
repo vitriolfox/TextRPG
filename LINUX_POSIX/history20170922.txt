@@ -1,0 +1,818 @@
+    1  sudo apt-get update
+    2  sudo apt-get upgrade
+    3  sudo apt-get install clementine
+    4  sudo apt-get install krita
+    5  sudo apt-get install gimp
+    6  sudo apt-get install inkscape
+    7  sudo apt-get install vlc
+    8  exit
+    9  sudo apt-get update
+   10  sudo apt-get upgrade
+   11  exit
+   12  sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886 0DF731E45CE24F27EEEB1450EFDC8610341D9410
+   13  echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+   14  sudo apt-get update
+   15  sudo apt-get install spotify-client
+   16  sudo apt-get upgrade
+   17  exit
+   18  sudo apt-get update
+   19  sudo apt-get upgrade
+   20  exit
+   21  sudo apt-get install thunderbird
+   22  sudo apt-get update
+   23  sudo apt-get upgrade
+   24  exit
+   25  sudo apt-get update
+   26  sudo apt-get upgrade
+   27  sudo apt-get update
+   28  sudo apt-get upgrade
+   29  exit
+   30  sudo apt-get update
+   31  sudo apt-get upgrade
+   32  exit
+   33  sudo apt-get install wine
+   34  sudo apt-get install wine-stable 1.8.7-1ubuntu1
+   35  vi
+   36  vim
+   37  sudo apt-get install vim
+   38  vim
+   39  gedit
+   40  kate
+   41  nano
+   42  pwd
+   43  cd /boot
+   44  dir
+   45  ls
+   46  ..cd
+   47  .cd
+   48  .
+   49  ..
+   50  ../
+   51  ls -l
+   52  ls -la
+   53  ls /bin
+   54  echo ls
+   55  echo 5+3
+   56  man pwd
+   57  ls / -la
+   58  ls -R
+   59  ls / -laR
+   60  ls / -lar
+   61  ls / -laR
+   62  ls -la
+   63  mkdir bármi
+   64  ls -ld
+   65  cd bármi
+   66  touch bármibármi
+   67  vim bármi
+   68  vim
+   69  vim bármi
+   70  hystori
+   71  history
+   72  mkdir /ezalmappa1/ezalmappa2
+   73  mkdir -p /ezalmappa1/ezalmappa2
+   74  mkdir -p ./ezalmappa1/ezalmappa2
+   75  cd ezalmappa2
+   76  cd ezalmappa1
+   77  cd ezalmappa2
+   78  touch ez.txt
+   79  vim ez-txt
+   80  cd ..
+   81  rm ezalmappa2
+   82  rm -t ezalmappa2
+   83  rm -dfr ezalmappa2
+   84  ls
+   85  cd ..
+   86  touch xy.txt
+   87  mv xy.txt ezalmappa1
+   88  cd ezalmappa1
+   89  ls
+   90  mv xy.txt zb.txt
+   91  ls
+   92  mkdir ezalmappa2
+   93  mkdir /ezisalmappa
+   94  mkdir ../ezisalmappa
+   95  cp zb.txt ../ezisalmappa
+   96  cd ..
+   97  ls
+   98  cd ..
+   99  mkdir 1
+  100  cd 1
+  101  touch 2 3 4
+  102  cd ..
+  103  mkdir 5
+  104  cd 1
+  105  cp -r 2 3 4 ../5
+  106  cd ..
+  107  cd 5
+  108  ls
+  109  exit
+  110  for ((i=0; i<200; i++)); do touch aaaaaaaaaa_$i ; done
+  111  ls
+  112  cd flow
+  113  cd FLOW
+  114  ls
+  115  cd LINUX_POSIX
+  116  ls
+  117  cd tananyag
+  118  history
+  119  ls
+  120  mv linux_konyvtarszerkezet.pdf 5_linux_konyvtarkezeles.pdf
+  121  ls
+  122  exit
+  123  ls
+  124  ls -F
+  125  ls -F /bármi
+  126  ls -F ./bármi
+  127  ls -ld ./bármi
+  128  cd /bármi
+  129  cd bármi
+  130  ls
+  131  mv ezalmappa ezisalmappa
+  132  mv ezalmappa1 ezisalmappa
+  133  ls
+  134  cd ezisalmappa/
+  135  ls
+  136  mv ezalmappa ..
+  137  mv ezalmappa1 ..
+  138  ls
+  139  cd ..
+  140  ls
+  141  cd -R ezalmappa1 ezisalmappa
+  142  cp -R ezalmappa1 ezisalmappa
+  143  ls
+  144  cd ezisalmappa
+  145  ls
+  146  rmdir ezalmappa1
+  147  rmdir -d ezalmappa1
+  148  rm -d ezalmappa1
+  149  rm -df ezalmappa1
+  150  history
+  151  rm -dfr ezalmappa1
+  152  ls
+  153  cd ..
+  154  tree
+  155  sudo apt-get install tree
+  156  tree
+  157  cd ..
+  158  tree
+  159  mkdir tudas
+  160  mkdir jarmu
+  161  pwd
+  162  cd /
+  163  cd ~
+  164  cd jarmu
+  165  mkdir Citroen Daewoo Fiat Ford Lada Mercedes Nissan Opel Peugeot
+  166  ls
+  167  pwd
+  168  cd ..
+  169  cd FLOW
+  170  ls
+  171  cd CSSHTML
+  172  ls
+  173  index.html
+  174  chrome index.html
+  175  cd /
+  176  cd~
+  177  cd ~
+  178  cd /root
+  179  cd /etc
+  180  cd ..
+  181  ls
+  182  ls -l /etc
+  183  ls -l /var/log
+  184  cd ~
+  185  mkdir Teszt
+  186  mkdir ./Teszt/T1 ./Teszt/T2
+  187  ls /Teszt
+  188  ls ./Teszt
+  189  tree
+  190  tree ./Teszt
+  191  mkdir -p ./Teszt/Unix/Linux/Debian
+  192  tree ./Teszt
+  193  cd ./Teszt/Unix/Linux
+  194  mv Debian Deb
+  195  ls
+  196  mv Deb Debian
+  197  cd ~
+  198  mv ./Teszt/Unix/Linux/Debian ./Teszt/Unix/Linux/Deb
+  199  tree ./Teszt
+  200  mv ./Teszt/Unix/Linux/Deb ./Teszt/T1
+  201  tree ./Teszt
+  202  rm -d ./Teszt/T1
+  203  rm -r ./Teszt/T1
+  204  tree ./Teszt
+  205  rm -r ./Teszt
+  206  tree
+  207  ls
+  208  ls -la /etc
+  209  ls -la /etc/*conf
+  210  ls -la /etc/*.conf
+  211  ls -la /etc/p*
+  212  cd /etc
+  213  ls p*
+  214  cd ~
+  215  ls /etcp*
+  216  ls /etc/p*
+  217  ls /etc/*f
+  218  ls /etc/*f.*
+  219  ls /etc/*f.
+  220  ls /etc/*f
+  221  ls /etc/*f.*
+  222  ls /etc/p**s*d.*
+  223  ls /etc/p**s*d.
+  224  ls /etc/p**s*d
+  225  ls -a
+  226  ls -d /etc/*f
+  227  ls -d /etc/*[an]*
+  228  ls -d /etc/*[a n]*
+  229  ls -d /etc/*[an]*
+  230  cd /etc
+  231  ls -d *[an]*
+  232  ls -d [an]*
+  233  ls -d $[an]*
+  234  ls -d ?[an]*
+  235  cd ~
+  236  ls /etc/?[an]*
+  237  ls -d /etc/?[an]*
+  238  ls /etc/p??s?d
+  239  ls -dI /etc/?1
+  240  ls -dI /etc/?[an]*
+  241  ls -I /etc/?[an]*
+  242  ls -dI /etc/?[an]*
+  243  ls -I /etc/"?[an]*"
+  244  ls -dI /etc/"?[an]*"
+  245  ls -dI /etc/?[an]*
+  246  ls -dI /etc/?an*
+  247  ls -d /etc/?[an]*
+  248  cd /etc
+  249  ls -I "?a*" -I "?n*"
+  250  ls -I ?a* -I ?n*
+  251  ls -I "?a*" -I "?n*"
+  252  ls -d /etc/?[an]*-I "?a*" -I "?n*"
+  253  cd ..
+  254  cd '
+  255  cd ~
+  256  ls -I /etc/"?[an]*"
+  257  ls -I /etc/"?n*"
+  258  ls -I etc/"?a*" -I etc/"?n*"
+  259  ls -I /etc/"?a*" -I /etc/"?n*"
+  260  ls -I ./etc/"?a*" -I ./etc/"?n*"
+  261  ls -l /
+  262  ls -r
+  263  history
+  264  ls -la
+  265  ls / -la
+  266  ls -la /
+  267  ls /
+  268  ls -R /
+  269  midnight commander
+  270  mcommander
+  271  mc
+  272  sudo apt-get install mc
+  273  mc
+  274  mkdir gyakorlat
+  275  cd gyakorlat
+  276  mkdir Proba Check Tmp
+  277  mkdir -p ./Proba/test/unix
+  278  mkdir Linux
+  279  tree
+  280  rmdir Linux
+  281  tree
+  282  mkdir ./Proba/Linux
+  283  tree
+  284  cd ..
+  285  tree
+  286  cd /etc
+  287  tree -d
+  288  tree
+  289  tree -d
+  290  cp passwd ~/gyakorlat/Proba/
+  291  ls ~/gyakorlat/Proba/
+  292  ls shadow
+  293  ls shadow*
+  294  cp shadow ~/gyakorlat/Proba/test/
+  295  sudo cp shadow ~/gyakorlat/Proba/test/
+  296  ls ~/gyakorlat/Proba/test/
+  297  cp *.conf ~/gyakorlat/Proba/Linux/
+  298  ls ~/gyakorlat/Proba/Linux/
+  299  cp ?a?s*d ~/gyakorlat/Check/
+  300  ls ~/gyakorlat/Check/
+  301  mv ~/gyakorlat/Proba/
+  302  mv ~/gyakorlat/Proba/test/* ~/gyakorlat/Proba/Linux/
+  303  ls ~/gyakorlat/Proba/Linux/
+  304  mv ~/gyakorlat/Proba/Linux/unix ~/gyakorlat/Proba/test/
+  305  mv ~/gyakorlat/Proba/Linux/shadow ~/gyakorlat/Proba/test/
+  306  ls ~/gyakorlat/Proba/test
+  307  mv ~/gyakorlat/Proba/test/* ~/gyakorlat/Proba/Linux/
+  308  man ls
+  309  man mv
+  310  mv ~/gyakorlat/Proba/test/* ~/gyakorlat/Proba/Linux/
+  311  ls ~/gyakorlat/Proba/Linux/
+  312  cd ~
+  313  touch ~/gyakorlat/Check/Adatok.txt
+  314  rm ~/gyakorlat/Proba/Linux/*
+  315  rm -f ~/gyakorlat/Proba/Linux/*
+  316  rm -df ~/gyakorlat/Proba/Linux/*
+  317  ls ~/gyakorlat/Proba/Linux
+  318  rm ~/gyakorlat/Proba
+  319  rm -d ~/gyakorlat/Proba
+  320  rm -df ~/gyakorlat/Proba
+  321  rm -dr ~/gyakorlat/Proba
+  322  ls ~/gyakorlat
+  323  vim /etc/passwd
+  324  kate /etc/passwd
+  325  nano /etc/passwd
+  326  less /etc/passwd
+  327  file /etc/passwd
+  328  file /bin/bash
+  329  file /var/log/syslog
+  330  exit
+  331  cd ~/FLOW/CSSHTML/
+  332  ls
+  333  code .
+  334  cd lists
+  335  touch index.html styles.css
+  336  ls
+  337  code .
+  338  less /etc/passwd
+  339  klavaro
+  340  tuch erdo.txt
+  341  touch erdo.txt
+  342  ln erdo.txt fak.txt
+  343  rm erdo.txt
+  344  ls -l erdo.txt
+  345  ls
+  346  nano fak.txt
+  347  ln fak.txt bokor.txt
+  348  rm fak.txt
+  349  nano bokot.txt
+  350  nano fak.txt
+  351  ls
+  352  nano bokot.txt
+  353  nano bokor.txt
+  354  rm bokor.txt
+  355  touch bokor.txt
+  356  nano bokor.txt
+  357  file bokor.txt
+  358  nano bokor.txt
+  359  file bokor.txt
+  360  mv bokor.txt bokor.dat
+  361  file bokor.dat
+  362  history
+  363  stat bokor.dat
+  364  stat FLOW
+  365  du bokor.dat
+  366  touch fa1.txt fa2.txt
+  367  nano ta1.txt
+  368  nano fa2.txt
+  369  file fa1.txt
+  370  du fa1.txt
+  371  du fa2.txt
+  372  nano fa1.txt
+  373  du fa1.txt
+  374  du fa2.txt
+  375  stat fa1.txt fa2.txt
+  376  du fa1.txt fa2.txt
+  377  nano fa1.txt
+  378  stat fa1.txt fa2.txt
+  379  du fa1.txt fa2.txt
+  380  fdisk
+  381  fdisk sda
+  382  df -h
+  383  du -hs FLOW
+  384  du -sh ~
+  385  locate host
+  386  locate host.*
+  387  find / -name "host.*"
+  388  find / -name "host"
+  389  sudo find / -name "host"
+  390  locate host.*
+  391  locate host
+  392  sudo find / -name "host"
+  393  sudo find / -name "hosts"
+  394  nano /etc/hosts
+  395  history | less
+  396  history | nano
+  397  history | less
+  398  cat "rizibizi" > bokor.txt
+  399  touch bokor.txt
+  400  cat "rizibizi" > bokor.txt
+  401  echo "rizibizi" > bokor.txt
+  402  bokor.txt
+  403  nano bokor.txt
+  404  cat > bokor.txt
+  405  nano bokor.txt
+  406  cat > bokor2.txt
+  407  cat bokor.txt bokor2.txt > bokor3.txt
+  408  nano bokor3.txt
+  409  cat bokor.txt bokor2.txt
+  410  ls aaaa
+  411  ls aaaa > a.txt
+  412  cat a.txt
+  413  nano a.txt
+  414  ls aaaa 2> a.txt
+  415  nano a.txt
+  416  cat a.txt
+  417  cat > a.txt
+  418  cat < a.txt > a2.txt
+  419  cat a2.txt
+  420  cat < bokor2.txt > a2.txt
+  421  cat bokor2.txt
+  422  ls -l | tee bokor2.txt | less
+  423  nano bokor2.txt
+  424  cat > b.txt
+  425  cat b.txt 
+  426  cat b.txt |
+  427  ls
+  428  ls -l | wc -l
+  429  man wc
+  430  cat > feladat.txt
+  431  cat feladat.txt
+  432  mv feladat.txt ./FLOW/LINUX_POSIX/
+  433  ls
+  434  ls -a | wc -l
+  435  ls -a
+  436  print n
+  437  printenv
+  438  printenv PATH
+  439  printenv HOME
+  440  printenv SHELL
+  441  set
+  442  set | less
+  443  export TEST_VAR=hello
+  444  set | grep TEST_VAR
+  445  unset TEST_VAR
+  446  set | grep TEST_VAR
+  447  unset TEST_VAR
+  448  who am i
+  449  whoami
+  450  id
+  451  who
+  452  users
+  453  w
+  454  last
+  455  more
+  456  last more
+  457  last | more
+  458  date
+  459  which nano
+  460  which ls
+  461  which wacom
+  462  zip
+  463  sudo apt-get install zip
+  464  gzip
+  465  zip bokor.txt
+  466  man zip
+  467  zip bokor.txt bokor-zip
+  468  zip bokor.zip bokor
+  469  zip bokor2 bokor5
+  470  file bokor2
+  471  file bokor2.zip
+  472  zip bokor2.zip bokor2
+  473  zip bokor2.zip bokor2.txt
+  474  zip -r bokor2.zip bokor3.txt
+  475  file bokor2.zip
+  476  zip -r bokor2.zip bokor3.txt
+  477  exit
+  478  Klavaro
+  479  klavaro
+  480  cd Fl
+  481  cd FLOW/LINUX_POSIX/feladatok/
+  482  ls
+  483  cd ..
+  484  ls
+  485  cd tananyag/
+  486  ls
+  487  dolphin .
+  488  cd ..
+  489  cd feladatok/
+  490  ls
+  491  fajlkezeles_20170920.odt
+  492  touch fajlkezeles_20170920.odt
+  493  kate fajlkezeles_20170920.odt 
+  494  libreoffice
+  495  librewriter
+  496  writer
+  497  libreoffice fajlkezeles_20170920.odt 
+  498  man set
+  499  help set
+  500  help set | nano
+  501  help set | less
+  502  cd ~
+  503  ls
+  504  cd FLOW/
+  505  ls
+  506  cd LINUX_POSIX/
+  507  ls
+  508  cat feladat.txt
+  509  history > history.txt
+  510  less history.txt
+  511  ls -l | wc -l
+  512  ls
+  513  ls -a
+  514  ls -a | wc -l
+  515  man ls
+  516  ls "f*"
+  517  ls f*
+  518  ls f*.*
+  519  ls -a .*
+  520  ls -a .*.*
+  521  ls -ad .*
+  522  touch .rejtett.txt
+  523  ls
+  524  ls -a
+  525  ls -ad .*
+  526  ls -ad .* | wc -l
+  527  cd ~
+  528  ls
+  529  rm -r 1 5 bármi gyakorlat jarmu
+  530  ls
+  531  cd tudas
+  532  ls
+  533  cd ..
+  534  rm -r tudas
+  535  ls
+  536  rm a2.txt a.txt bokor2.txt bokor2.zip bokor3.txt bokor.dat bokor.txt b.txt fa1.txt fa2.txt nano.save ta1.txt 
+  537  ls
+  538  ls -a
+  539  mkdir Proba
+  540  cp /etc/passwd Proba
+  541  ls /Proba
+  542  ls
+  543  ls Proba
+  544  stat Proba/passwd 
+  545  ln Proba/passwd jelszofajl
+  546  stat Proba/passwd 
+  547  cat Proba/passwd 
+  548  cat Proba/jelszofajl
+  549  cat jelszofajl
+  550  stat jelszofajl
+  551  rm Proba/passwd 
+  552  ls Proba
+  553  stat jelszofajl
+  554  cat jelszofajl
+  555  mv jelszofajl Proba/passwd
+  556  ls
+  557  cd Proba/
+  558  la
+  559  cat passwd
+  560  stat passwd
+  561  ln -s passwd s_p.txt
+  562  cat s_p.txt
+  563  du s_p.txt
+  564  file s_p.txt
+  565  cd ~
+  566  users
+  567  users | cat > users.txt
+  568  cat users
+  569  cat users.txt 
+  570  ls -a
+  571  ls -a .* | wc -l
+  572  ls -ad .* | wc -l
+  573  ls -a | grep "^\."
+  574  ls -ad | grep "^\."
+  575  man grep
+  576  grep
+  577  grep .*
+  578  ls -ad | grep "^\."
+  579  ls -a
+  580  ls -ad | grep 
+  581  man grep
+  582  less history
+  583  history | less
+  584  find ~ -name ".*"
+  585  ls -a
+  586  ls -ad
+  587  ls -a | grep "^*/"
+  588  ls -a | less
+  589  ls -ad | grep "^\."
+  590  ls -ad | grep "^/."
+  591  ls -ad | grep "^."
+  592  ls -ad | grep ".*"
+  593  ls -a | grep ".*"
+  594  ls -ad | grep "^/."
+  595  ls -a | grep "^/."
+  596  ls -a | grep "^\."
+  597  ls -a | grep "^\." | wc -l
+  598  ls -a | grep "^\."
+  599  ls -a | grep "^."
+  600  ls -a | grep "."
+  601  ls -a | grep "^\."
+  602  ls -a | grep ^\.
+  603  ls -a | grep "^\."
+  604  ls -a | grep "^\." | wc -l
+  605  mkdir /FLOW/CSSHTML/3-feladat
+  606  ls
+  607  mkdir ./FLOW/CSSHTML/3-feladat
+  608  cd ./FLOW/CSSHTML/3-feladat
+  609  code
+  610  mkdir tables
+  611  cd tables
+  612  touch index.html styles.css
+  613  code .
+  614  mkdir tablazatfeladat
+  615  cd tablazatfeladat/
+  616  touch index.html styles.css
+  617  cd ..
+  618  code .
+  619  echo $PATH
+  620  ls /root
+  621  ls -a
+  622  ls -la
+  623  user
+  624  who
+  625  whoami
+  626  w
+  627  ls -l
+  628  touch valami.txt
+  629  chown root.root valami.txt
+  630  sudo chown vitriolfox.root valami.txt
+  631  valami.txt
+  632  nano valami.txt
+  633  file nano
+  634  sudo chown root.root valami.txt
+  635  nano valami.txt
+  636  touch erdo.txt
+  637  chmod u-w erdo.txt
+  638  nano erdo.txt
+  639  group
+  640  groups
+  641  vim feladat.txt
+  642  touch feladat.txt
+  643  nano feladat.txt
+  644  ls -l
+  645  ./feladat.txt
+  646  chmod 777 feladat.txt
+  647  ./feladat.txt
+  648  nano feladat.txt
+  649  touch nyilt.txt
+  650  nano nyilt.txt
+  651  mcrypt nyilt.txt
+  652  sudo apt-get install mcrypt
+  653  mcrypt nyilt.txt
+  654  cat nyilt.txt.nc 
+  655  mdecrypt nyilt.txt
+  656  mdecrypt nyilt.txt.nc
+  657  cat nyilt.txt.nc 
+  658  cat nyilt.txt
+  659  ls -a
+  660  ls -a | grep "^\." | wc -l
+  661  ls -a | grep "^\. | wc -l
+  662  ls -a | grep ^\. | wc -l
+  663  cat > belepesinaplo.txt
+  664  cat belepesinaplo.txt
+  665  grep alex belepesinaplo.txt
+  666  grep -v alex belepesinaplo.txt
+  667  cat > naplo.txt
+  668  grep 2006 naplo.log
+  669  cat > naplo.log
+  670  grep 2006 naplo.log
+  671  grep ^2006 naplo.log
+  672  grep -l VGA *
+  673  grep "200[5678] bytes" naplo.log
+  674  grep "200[5-8][B bytes" naplo.log
+  675  [a-z]
+  676  grep -H -r “Rewrite” /etc/apache2/
+  677  grep -H -r “2005” 
+  678  grep -H -r “ezatitkos” 
+  679  cat bokor.txt
+  680  cat > bokor.txt
+  681  grep -H -r “xzx” 
+  682  grep -H -r “Alex"
+  683  cat > tanulok2.txt
+  684  cat tanulok2.txt | cut -c4-22
+  685  cat > tanulok3.txt
+  686  cut -f2 -d : tanulok3.txt
+  687  cat > tanulok4.txt
+  688  cut -f2 -d : tanulok4.txt
+  689  cut -f 2,3,4 -d : tanulok4.txt
+  690  rev tanulok4.txt
+  691  exit
+  692  cd FLOW/CSSHTML/
+  693  mkdir feladat-table
+  694  cd feladat
+  695  touch index.html styles.css
+  696  code .
+  697  cd ..
+  698  cd feladat-table/
+  699  touch index.html styles.css
+  700  code .
+  701  sudo apt-get update
+  702  sudo apt-get upgrade
+  703  exit
+  704  cd FLOW/CSSHTML/
+  705  mkdir feladat-tablazat2
+  706  cd feladat-tablazat2/
+  707  touch index.html styles.css
+  708  code .
+  709  cd CSSHTML
+  710  cd /CSSHTML
+  711  cd ..
+  712  mkdir forms
+  713  cd forms
+  714  touch index.html styles.css
+  715  code .
+  716  sudo apt-get update
+  717  sudo apt-get upgrade
+  718  exit
+  719  set
+  720  klavaro
+  721  cat /proc/sys/kernel/pid_max
+  722  ps
+  723  nano &
+  724  mcedit &
+  725  yes > /dev/null &
+  726  ps
+  727  ps a
+  728  kate
+  729  kate &
+  730  ps ax
+  731  ps ax -f
+  732  ps axu
+  733  ps a
+  734  man nice
+  735  kill 5625
+  736  ps a
+  737  kill -1
+  738  man xkill
+  739  man nice
+  740  jobs
+  741  fg 1
+  742  jobs
+  743  exit
+  744  pstree
+  745  pstree vitriolfox
+  746  top
+  747  man top
+  748  kill x
+  749  top
+  750  tree
+  751  cd /etc
+  752  ls
+  753  cd ..
+  754  sudo init3
+  755  sudo init 3
+  756  ping index.hu
+  757  sudo init 5
+  758  service kdm restart
+  759  sudo initljékljlké3
+  760  sudo init 3
+  761  sudo init 5
+  762  sudo init 3
+  763  sudo init 5
+  764  sudo init 2
+  765  sudo init 6
+  766  cd FLOW/
+  767  cd LINUX_POSIX/feladatok/
+  768  touch 13_feladatok.odt
+  769  office 13_feladatok.odt
+  770  loffice 13_feladatok.odt
+  771  cd ~
+  772  grep sh /etc/passwd
+  773  grep ^sh /etc/passwd
+  774  grep -v sh /etc/passwd
+  775  grep r* /etc/passwd
+  776  grep ^f /etc/passwd
+  777  grep ^r /etc/passwd
+  778  grep $false /etc/passwd
+  779  grep false$ /etc/passwd
+  780  grep login /etc/passwd
+  781  grep f* /etc/passwd
+  782  grep *f /etc/passwd
+  783  grep login /etc/passwd
+  784  grep vitriolfox /etc/passwd
+  785  grep ^f /etc/passwd
+  786  grep root /etc/passwd
+  787  grep root: /etc/passwd
+  788  grep ^root: /etc/passwd
+  789  grep [^aoiue]
+  790  grep [^aoiue] /etc/passwd
+  791  grep ^[^aoiue] /etc/passwd
+  792  grep ^[^aoiue] /etc/passwd | wc -l
+  793  grep ^[^aoiue_] /etc/passwd | wc -l
+  794  grep $bash /etc/passwd | wc -l
+  795  grep $bash /etc/passwd
+  796  grep bash$ /etc/passwd
+  797  grep ^["bash"$] /etc/passwd
+  798  grep ["bash"$] /etc/passwd
+  799  grep "bash"$ /etc/passwd
+  800  grep "bash"$ /etc/passwd
+  801  grep [^"bash"$] /etc/passwd
+  802  grep ["bash"$] /etc/passwd
+  803  grep "bash"$ /etc/passwd
+  804  grep bash$ /etc/passwd
+  805  man egrep
+  806  grep -v bash$ /etc/passwd
+  807  ls /dev
+  808  ls -l /dev
+  809  ls -l /dev | grep ^c | wc -l
+  810  ls -l /dev | grep ^b | wc -l
+  811  cat /etc/bash.bashrc
+  812  grep [^] /etc/bash.bashrc
+  813  grep [^ ] /etc/bash.bashrc
+  814  cd FLOW/LINUX_POSIX/feladatok/
+  815  ls
+  816  cd ~
+  817  klavaro
+  818  history > FLOW/LINUX_POSIX/history20170922.txt
