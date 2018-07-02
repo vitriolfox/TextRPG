@@ -19,7 +19,7 @@ public class GameMenu {
             Map.newMap(args, filePath);
             PlayerCreator.creator();
         } else if (menuEntry.equals("load")){
-            System.out.print("Map name (.json): ");
+            System.out.print("Map name (.fmap): ");
             String mapLoadName = scanner.next();
             Map.load(mapLoadName,filePath);
         }else if (menuEntry.equals("save")){

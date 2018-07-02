@@ -16,6 +16,9 @@ import java.util.Date;
 public class Map {
 
     public static void newMap(String[] args, String jsonPath) {
+
+        //Az alap térképnevet (TestMap_10_10_new) az arg0 tartalmazza, előre bekonfigurálva
+
         GameFieldTemplate[][] map;
         if (args.length == 1) {
             try {
