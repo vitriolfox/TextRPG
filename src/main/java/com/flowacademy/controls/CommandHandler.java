@@ -5,6 +5,7 @@ import com.flowacademy.lib.GameMenu;
 import com.flowacademy.lib.SinonymHandler;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
 import com.flowacademy.views.HUD;
+import com.flowacademy.views.MapDrawer;
 
 import java.util.Set;
 
@@ -46,6 +47,8 @@ public class CommandHandler {
             HUD.hud(map, actualField);
         } else if (input.equals("menu")){
             GameMenu.gameMenu(map,actualField, filePath, args);
+        } else if (input.equals("drawmap")){
+            MapDrawer.drawMap();
         }
     }
 }
