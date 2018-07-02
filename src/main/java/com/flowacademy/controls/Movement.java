@@ -15,11 +15,11 @@ public class Movement {
     }
 
     public static GameFieldTemplate moveEast(GameFieldTemplate[][] map, GameFieldTemplate actualField){
-        return fieldMoveValidator(map, actualField,(actualField.getX()),(actualField.getY()+1));
+        return fieldMoveValidator(map, actualField,(actualField.getX()),(actualField.getY()-1));
     }
 
     public static GameFieldTemplate moveWest(GameFieldTemplate[][] map, GameFieldTemplate actualField){
-        return fieldMoveValidator(map, actualField,(actualField.getX()),(actualField.getY()-1));
+        return fieldMoveValidator(map, actualField,(actualField.getX()),(actualField.getY()+1));
     }
 
 }

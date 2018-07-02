@@ -9,12 +9,18 @@ public class MapDrawer {
 
         GameFieldTemplate[][] playmainMap = PlayMain.getMap();
 
-        for (int i = 0; i <= playmainMap.length-1; i++) {
-            for (int j =0; j <= playmainMap[i].length; j++) {
-                System.out.printf("[X]");
+        for (int i = playmainMap.length-1; i >= 0; i--) {
+            for (int j = playmainMap[i].length-1; j >= 0; j--) {
+                if (i == PlayMain.getActualField().getX() && j == PlayMain.getActualField().getY()){
+                    System.out.printf(MapColors.ANSI_CYAN + "[O]" + MapColors.ANSI_RESET);
+                } else {
+                    System.out.printf(MapColors.ANSI_GREEN + "[" + playmainMap[i][j].getMapSign() + "]" + MapColors.ANSI_RESET);
+                }
             }
-            System.out.println("\n");
+            System.out.printf("\n");
         }
+
+
 
     }
 

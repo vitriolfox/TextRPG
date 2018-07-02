@@ -7,6 +7,7 @@ public class GameFieldTemplate {
     protected int x;
     protected int y;
     protected String name;
+    protected String mapSign;
     protected String description;
     protected String farDescription;
     protected NpcTemplate npc;
@@ -14,6 +15,14 @@ public class GameFieldTemplate {
     protected boolean accessable;
 
     public GameFieldTemplate() {
+    }
+
+    public String getMapSign() {
+        return mapSign;
+    }
+
+    public void setMapSign(String mapSign) {
+        this.mapSign = mapSign;
     }
 
     public int getX() {
