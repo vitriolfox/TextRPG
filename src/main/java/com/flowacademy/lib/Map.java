@@ -2,6 +2,7 @@ package com.flowacademy.lib;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.flowacademy.PlayMain;
+import com.flowacademy.models.Gamefield.Fields.Grassfields;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
 import com.flowacademy.models.Player.Player;
 import com.flowacademy.models.Player.PlayerClasses.Barbarian;
@@ -46,9 +47,20 @@ public class Map {
                     //ObjectMapper objectMapper = new ObjectMapper();
                     //gameField = objectMapper.readValue(line, GameFieldTemplate.class);
                     //map[gameField.getX()][gameField.getY()] = gameField;
-                    splittedline = line.split("|");
-                    for(int i=0; i <= splittedline.length-1){
+                    splittedline = line.split("/");
+                    for(int i=0; i <= splittedline.length-1; i++){
                         splittedBlock = splittedline[i].split(":");
+                        if(splittedBlock[2].equals("G")){
+                            int mapX = Integer.parseInt(splittedBlock[0]);
+                            int mapY = Integer.parseInt(splittedBlock[1]);
+                            boolean accessible;
+                            if(splittedBlock[5].equals("1")){
+                                accessible = true;
+                                map[mapX][mapY] = new Grassfields(mapX, mapY, accessible);
+                            }
+                        } else {
+                            System.out.println("Elhasalt a MapSign azonosító felismerése");
+                        }
 
 
                     }
