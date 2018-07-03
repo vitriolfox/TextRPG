@@ -12,6 +12,14 @@ public class FieldIndexValidator {
         }
     }
 
+    public static String fieldFarDescriptionValidator(GameFieldTemplate[][] map, int X, int Y){
+        if (X > map.length-1 || X < 0 || Y > map[X].length-1 || Y < 0){
+            return "Semmi.";
+        } else {
+            return map[X][Y].getFarDescription();
+        }
+    }
+
     public static GameFieldTemplate fieldMoveValidator(GameFieldTemplate[][] map, GameFieldTemplate actualField, int X, int Y){
         if (X > map.length-1 || X < 0 || Y > map[X].length-1 || Y < 0){
             System.out.println("ERRE NEM LEHET MENNI!");

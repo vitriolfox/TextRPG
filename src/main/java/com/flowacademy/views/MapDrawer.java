@@ -14,11 +14,13 @@ public class MapDrawer {
                 if (i == PlayMain.getActualField().getX() && j == PlayMain.getActualField().getY()){
                     System.out.printf(MapColors.ANSI_CYAN + "[O]" + MapColors.ANSI_RESET);
                 } else {
-                    System.out.printf(MapColors.ANSI_GREEN + "[" + playmainMap[i][j].getMapSign() + "]" + MapColors.ANSI_RESET);
+                    System.out.printf(PlayMain.getActualField().getMapColor() + "[" + playmainMap[i][j].getMapSign() + "]" + MapColors.ANSI_RESET);
                 }
             }
             System.out.printf("\n");
         }
+
+        System.out.println("+========================================================+");
 
 
 
