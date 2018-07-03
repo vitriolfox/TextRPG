@@ -17,7 +17,7 @@ public class Map {
 
     public static void newMap(String[] args, String jsonPath) {
 
-        //Az alap térképnevet (TestMap_10_10_new) az arg0 tartalmazza, előre bekonfigurálva
+        //Az alap térképnevet (TestMap_3x3_shortform) az arg0 tartalmazza, előre bekonfigurálva
 
         GameFieldTemplate[][] map;
         if (args.length == 1) {
@@ -42,9 +42,16 @@ public class Map {
 
 
                 while ((line = br.readLine()) != null) {
-                    ObjectMapper objectMapper = new ObjectMapper();
-                    gameField = objectMapper.readValue(line, GameFieldTemplate.class);
-                    map[gameField.getX()][gameField.getY()] = gameField;
+                    String[] splittedBlock;
+                    //ObjectMapper objectMapper = new ObjectMapper();
+                    //gameField = objectMapper.readValue(line, GameFieldTemplate.class);
+                    //map[gameField.getX()][gameField.getY()] = gameField;
+                    splittedline = line.split("|");
+                    for(int i=0; i <= splittedline.length-1){
+                        splittedBlock = splittedline[i].split(":");
+
+
+                    }
                 }
 
                 PlayMain.setMap(map);
