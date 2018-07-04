@@ -3,6 +3,7 @@ package com.flowacademy.lib;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.flowacademy.PlayMain;
 import com.flowacademy.models.Gamefield.Fields.Grassfields;
+import com.flowacademy.models.Gamefield.Fields.Rivers;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
 import com.flowacademy.models.Player.Player;
 import com.flowacademy.models.Player.PlayerClasses.Barbarian;
@@ -18,7 +19,7 @@ public class Map {
 
     public static void newMap(String[] args, String jsonPath) {
 
-        //Az alap térképnevet (TestMap_3x3_shortform) az arg0 tartalmazza, előre bekonfigurálva
+        //Az alap térképnevet (TestMap_10x10_shortform) az arg0 tartalmazza, előre bekonfigurálva
 
         GameFieldTemplate[][] map;
         if (args.length == 1) {
@@ -44,24 +45,17 @@ public class Map {
 
                 while ((line = br.readLine()) != null) {
                     String[] splittedBlock;
-                    //ObjectMapper objectMapper = new ObjectMapper();
-                    //gameField = objectMapper.readValue(line, GameFieldTemplate.class);
-                    //map[gameField.getX()][gameField.getY()] = gameField;
                     splittedline = line.split("/");
-                    for(int i=0; i <= splittedline.length-1; i++){
-                        splittedBlock = splittedline[i].split(":");
-                        if(splittedBlock[2].equals("G")){
-                            int mapX = Integer.parseInt(splittedBlock[0]);
-                            int mapY = Integer.parseInt(splittedBlock[1]);
-                            boolean accessible;
-                            if(splittedBlock[5].equals("1")){
-                                accessible = true;
-                                map[mapX][mapY] = new Grassfields(mapX, mapY, accessible);
-                            }
-                        } else {
-                            System.out.println("Elhasalt a MapSign azonosító felismerése");
-                        }
 
+                    for(int i=0; i <= splittedline.length-1; i++){
+
+                        splittedBlock = splittedline[i].split(":");
+                        gameField = GameFieldCreator.createGameField(splittedBlock);
+                        int mapX = Integer.parseInt(splittedBlock[0]);
+                        int mapY = Integer.parseInt(splittedBlock[1]);
+
+
+                        map[mapX][mapY] = gameField;
 
                     }
                 }

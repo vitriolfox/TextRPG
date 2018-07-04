@@ -15,8 +15,13 @@ public class GameFieldTemplate {
     protected NpcTemplate npc;
     protected Item item;
     protected boolean accessable;
+    protected String notAccessibleDescription;
 
     public GameFieldTemplate() {
+    }
+
+    public String getNotAccessibleDescription() {
+        return notAccessibleDescription;
     }
 
     public String getMapColor() {
