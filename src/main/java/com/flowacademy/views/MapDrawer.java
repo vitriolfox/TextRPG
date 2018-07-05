@@ -11,10 +11,10 @@ public class MapDrawer {
 
         for (int i = 0; i <= playmainMap.length-1; i++) {
             for (int j = 0; j <= playmainMap[i].length-1; j++) {
-                if (i == PlayMain.getActualField().getX() && j == PlayMain.getActualField().getY()){
+                if (i == PlayMain.getActualField().getY() && j == PlayMain.getActualField().getX()){
                     System.out.printf(MapColors.ANSI_RED + "[O]" + MapColors.ANSI_RESET);
                 } else {
-                    System.out.printf(playmainMap[i][j].getMapColor() + "[" + playmainMap[i][j].getMapSign() + "]" + MapColors.ANSI_RESET);
+                    System.out.printf(playmainMap[j][i].getMapColor() + "[" + playmainMap[j][i].getMapSign() + "]" + MapColors.ANSI_RESET);
                 }
             }
             System.out.printf("\n");
