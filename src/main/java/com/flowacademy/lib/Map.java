@@ -15,13 +15,14 @@ import java.io.*;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Map {
 
     public static void infinitMap(String[] args, String jsonPath) {
 
-        // ArrayList <ArrayList<GameFieldTemplate>> infinitMap = new ArrayList<>();
-        GameFieldTemplate[][] map;
+        Set<GameFieldTemplate> map = new HashSet<>();
         if (args.length == 1) {
             try {
                 String mapName = args[0];
@@ -31,7 +32,7 @@ public class Map {
                 String[] splittedline = line.split("_");
                 PlayMain.setMapMaxX(Integer.parseInt(splittedline[1]));
                 PlayMain.setMapMaxY(Integer.parseInt(splittedline[2]));
-                map = new GameFieldTemplate[PlayMain.getMapMaxX()][PlayMain.getMapMaxY()];
+                //map = new GameFieldTemplate[PlayMain.getMapMaxX()][PlayMain.getMapMaxY()];
                 int actualFieldX = Integer.parseInt(splittedline[3]);
                 int actualFieldY = Integer.parseInt(splittedline[4]);
                 PlayMain.setTurnNumber(Integer.parseInt(splittedline[5]));
@@ -55,7 +56,7 @@ public class Map {
                         int mapY = Integer.parseInt(splittedBlock[1]);
 
 
-                        map[mapX][mapY] = gameField;
+                        map.add(gameField);
 
                     }
                 }
@@ -75,7 +76,7 @@ public class Map {
 
         //Az alap térképnevet (TestMap_10x10_shortform) az arg0 tartalmazza, előre bekonfigurálva
 
-        GameFieldTemplate[][] map;
+        Set<GameFieldTemplate> map = new HashSet<>();
         if (args.length == 1) {
             try {
                 String mapName = args[0];
@@ -85,7 +86,6 @@ public class Map {
                 String[] splittedline = line.split("_");
                 PlayMain.setMapMaxX(Integer.parseInt(splittedline[1]));
                 PlayMain.setMapMaxY(Integer.parseInt(splittedline[2]));
-                map = new GameFieldTemplate[PlayMain.getMapMaxX()][PlayMain.getMapMaxY()];
                 int actualFieldX = Integer.parseInt(splittedline[3]);
                 int actualFieldY = Integer.parseInt(splittedline[4]);
                 PlayMain.setTurnNumber(Integer.parseInt(splittedline[5]));

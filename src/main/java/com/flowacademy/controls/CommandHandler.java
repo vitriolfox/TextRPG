@@ -7,6 +7,7 @@ import com.flowacademy.models.Gamefield.GameFieldTemplate;
 import com.flowacademy.views.HUD;
 import com.flowacademy.views.MapDrawer;
 
+import java.util.HashSet;
 import java.util.Set;
 
 public class CommandHandler {
@@ -23,7 +24,7 @@ public class CommandHandler {
 
 
 
-    public static void commander(String input, GameFieldTemplate[][] map, GameFieldTemplate actualField, String filePath, String[] args){
+    public static void commander(String input, Set<GameFieldTemplate> map, GameFieldTemplate actualField, String filePath, String[] args){
 
         if (northSinonymSet.contains(input)){
             PlayMain.setActualField(Movement.moveNorth(map,actualField));

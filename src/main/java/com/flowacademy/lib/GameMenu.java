@@ -4,10 +4,11 @@ import com.flowacademy.PlayMain;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
 
 import java.util.Scanner;
+import java.util.Set;
 
 
 public class GameMenu {
-    public static void gameMenu(GameFieldTemplate[][] map, GameFieldTemplate actualField, String filePath, String[] args) {
+    public static void gameMenu(Set<GameFieldTemplate> map, GameFieldTemplate actualField, String filePath, String[] args) {
 
         String mapName = args[0];
         Scanner scanner = new Scanner(System.in);

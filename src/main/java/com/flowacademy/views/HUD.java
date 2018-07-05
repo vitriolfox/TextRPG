@@ -3,8 +3,11 @@ package com.flowacademy.views;
 import com.flowacademy.PlayMain;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class HUD {
-    public static void hud(GameFieldTemplate[][] map, GameFieldTemplate actualField){
+    public static void hud(Set<GameFieldTemplate> map, GameFieldTemplate actualField){
 
 
         System.out.println("                " + PlayMain.getPlayerCharacter().getName() + " a hős " + PlayMain.getPlayerCharacter().getProfession() + "          ");
