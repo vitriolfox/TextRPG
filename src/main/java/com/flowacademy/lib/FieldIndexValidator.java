@@ -35,10 +35,14 @@ public class FieldIndexValidator {
         }
     }
 
-    public static GameFieldTemplate fieldAccessValidator(GameFieldTemplate[][] map, GameFieldTemplate actualField, int X, int Y){
-        if (!map[X][Y].isAccessable()){
-            System.out.println(map[X][Y]);
-            PlayMain.setTurnNumber(PlayMain.getTurnNumber()-1);
+
+    public static GameFieldTemplate fieldMoveValidatorInfinit(GameFieldTemplate[][] map, GameFieldTemplate actualField, int X, int Y){
+        if (X > map.length-1){
+            PlayMain.setMapMaxX(PlayMain.getMapMaxX()+1);
+            return actualField;
+        } else if (!map[X][Y].isAccessable()) {
+            System.out.println(MapColors.ANSI_RED + map[X][Y].getNotAccessibleDescription() + MapColors.ANSI_RESET);
+            PlayMain.setTurnNumber(PlayMain.getTurnNumber() - 1);
             return actualField;
         } else {
             return map[X][Y];
