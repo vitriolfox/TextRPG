@@ -13,16 +13,13 @@ import com.flowacademy.models.Player.PlayerClasses.Thief;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class Map {
 
     public static void infinitMap(String[] args, String jsonPath) {
 
-        Set<GameFieldTemplate> map = new HashSet<>();
+        HashMap<String, GameFieldTemplate> map = new HashMap<>();
         if (args.length == 1) {
             try {
                 String mapName = args[0];
@@ -55,14 +52,19 @@ public class Map {
                         int mapX = Integer.parseInt(splittedBlock[0]);
                         int mapY = Integer.parseInt(splittedBlock[1]);
 
+                        Integer xMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapX);
+                        Integer yMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapY);
 
-                        map.add(gameField);
+                        map.put(GameFieldKeyGenerator.gameFieldKeyGenerator(xMultiply, yMultiply), gameField);
 
                     }
                 }
 
                 PlayMain.setMap(map);
-                PlayMain.setActualField(map[actualFieldX][actualFieldY]);
+
+                Integer actualXMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldX);
+                Integer actualYMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldY);
+                PlayMain.setActualField(map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(actualXMultiply, actualYMultiply)));
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -72,7 +74,7 @@ public class Map {
         }
     }
 
-    public static void newMap(String[] args, String jsonPath) {
+    /*public static void newMap(String[] args, String jsonPath) {
 
         //Az alap térképnevet (TestMap_10x10_shortform) az arg0 tartalmazza, előre bekonfigurálva
 
@@ -123,9 +125,9 @@ public class Map {
         } else {
             System.out.println("Incorrect starting parameters!");
         }
-    }
+    }*/
 
-    public static void save(GameFieldTemplate[][] mapToSave, String savePath, String[] args) {
+    /*public static void save(GameFieldTemplate[][] mapToSave, String savePath, String[] args) {
         ObjectMapper objectMapper = new ObjectMapper();
         String mapName = args[0];
         String today = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
@@ -151,9 +153,9 @@ public class Map {
             e.printStackTrace();
         }
         System.out.println("Game Saved!");
-    }
+    }*/
 
-    public static void saveAs(GameFieldTemplate[][] mapToSave, String savePath, String[] args, String nameInput) {
+   /* public static void saveAs(GameFieldTemplate[][] mapToSave, String savePath, String[] args, String nameInput) {
         ObjectMapper objectMapper = new ObjectMapper();
         String mapName = args[0];
 
@@ -230,5 +232,5 @@ public class Map {
         } else {
             System.out.println("Incorrect starting parameters!");
         }
-    }
+    }*/
 }

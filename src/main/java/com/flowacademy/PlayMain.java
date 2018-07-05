@@ -5,6 +5,7 @@ import com.flowacademy.models.Gamefield.GameFieldTemplate;
 import com.flowacademy.models.Player.Player;
 import com.flowacademy.views.HUD;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -16,7 +17,7 @@ public class PlayMain {
     private static GameFieldTemplate actualField = null;
     private static int turnNumber = 0;
     private static Player playerCharacter = null;
-    private static Set<GameFieldTemplate> map = new HashSet<>();
+    private static HashMap<String, GameFieldTemplate> map = new HashMap<>();
     private static int mapMaxX = 0;
     private static int mapMaxY = 0;
     private static String prologe = null;
@@ -54,11 +55,11 @@ public class PlayMain {
         PlayMain.mapMaxY = mapMaxY;
     }
 
-    public static Set<GameFieldTemplate> getMap() {
+    public static HashMap<String, GameFieldTemplate> getMap() {
         return map;
     }
 
-    public static void setMap(Set<GameFieldTemplate> map) {
+    public static void setMap(HashMap<String, GameFieldTemplate> map) {
         PlayMain.map = map;
     }
 
