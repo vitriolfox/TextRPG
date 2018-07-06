@@ -54,8 +54,10 @@ public class Map {
 
                         Integer xMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapX);
                         Integer yMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapY);
+                        String gameFieldKey = GameFieldKeyGenerator.gameFieldKeyGenerator(xMultiply, yMultiply);
 
-                        map.put(GameFieldKeyGenerator.gameFieldKeyGenerator(xMultiply, yMultiply), gameField);
+                        map.put(gameFieldKey, gameField);
+                        map.get(gameFieldKey).setId(gameFieldKey);
 
                     }
                 }

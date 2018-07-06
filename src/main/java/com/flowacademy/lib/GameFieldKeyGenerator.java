@@ -15,4 +15,13 @@ public class GameFieldKeyGenerator {
         return xString + ":" + yString;
     }
 
+    public static Integer[] decomposeKey(String gameFieldKey){
+        String[] splittedKey = gameFieldKey.split(":");
+        Integer[] decomposedKey = new Integer[2];
+        decomposedKey[0] = Integer.parseInt(splittedKey[0]);
+        decomposedKey[1] = Integer.parseInt(splittedKey[1]);
+
+        return decomposedKey;
+    }
+
 }

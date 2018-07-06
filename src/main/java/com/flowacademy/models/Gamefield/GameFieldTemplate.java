@@ -7,6 +7,7 @@ import com.flowacademy.views.MapColors;
 public class GameFieldTemplate {
     protected int x;
     protected int y;
+    protected String id;
     protected String name;
     protected String mapSign;
     protected String mapColor;
@@ -20,8 +21,20 @@ public class GameFieldTemplate {
     public GameFieldTemplate() {
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getNotAccessibleDescription() {
         return notAccessibleDescription;
+    }
+
+    public void setNotAccessibleDescription(String notAccessibleDescription) {
+        this.notAccessibleDescription = notAccessibleDescription;
     }
 
     public String getMapColor() {
