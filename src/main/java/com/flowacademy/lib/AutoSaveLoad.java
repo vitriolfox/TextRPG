@@ -63,6 +63,9 @@ public class AutoSaveLoad {
                 Integer actualXMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldX);
                 Integer actualYMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldY);
                 PlayMain.setActualField(map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(actualXMultiply, actualYMultiply)));
+                String[] mapnameArg = new String[1];
+                mapnameArg[0] = "autosave_";
+                autoSave(map,"./FlowAdventuresDataFiles/",mapnameArg);
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -72,12 +75,12 @@ public class AutoSaveLoad {
         }
     }
 
-    public static void autoSave(HashMap<String, GameFieldTemplate> mapToSave, String savePath, String[] args, String nameInput) {
+    public static void autoSave(HashMap<String, GameFieldTemplate> mapToSave, String savePath, String[] args) {
         ObjectMapper objectMapper = new ObjectMapper();
         String mapName = args[0];
 
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(savePath + mapName + "_" + nameInput + ".fmap"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(savePath + mapName + ".fmap"));
             bw.write("MaxX,MaxY,StartingX,StartingY,TurnNumber:_"+PlayMain.getMapMaxX()+"_"+PlayMain.getMapMaxY()+
                     "_"+PlayMain.getActualField().getX()+"_"+PlayMain.getActualField().getY()+"_"+PlayMain.getTurnNumber()+"\n"+
                     "Prologe:_"+PlayMain.getProloge()+"\n"+
@@ -85,8 +88,8 @@ public class AutoSaveLoad {
                     objectMapper.writeValueAsString(PlayMain.getPlayerCharacter())+"\n");
 
             for (String gameField : mapToSave.keySet()) {
-                    String out = objectMapper.writeValueAsString(GameFieldEncoder.encodeGameField(mapToSave.get(gameField))) + "/";
-                    objectMapper.writeValue(new File(savePath + mapName + "_" + nameInput + ".fmap"), out);
+                    String out = objectMapper.writeValueAsString(GameFieldEncoder.encodeGameField(mapToSave.get(gameField)).replaceAll(",""));
+                    objectMapper.writeValue(new File(savePath + mapName + ".fmap"), out);
                     bw.write(out);
 
             }

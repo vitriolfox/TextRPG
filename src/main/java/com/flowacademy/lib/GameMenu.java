@@ -21,7 +21,7 @@ public class GameMenu {
             //Map.newMap(args, filePath);
             PlayerCreator.creator();
         } else if (menuEntry.equals("infinit")){
-            Map.infinitMap(args, filePath);
+            AutoSaveLoad.initMap(args,"./FlowAdventuresDataFiles/");
             PlayerCreator.creator();
         } else if (menuEntry.equals("load")){
             System.out.print("Map name (.fmap): ");

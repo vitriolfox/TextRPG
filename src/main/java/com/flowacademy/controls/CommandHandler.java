@@ -1,6 +1,7 @@
 package com.flowacademy.controls;
 
 import com.flowacademy.PlayMain;
+import com.flowacademy.lib.AutoSaveLoad;
 import com.flowacademy.lib.GameMenu;
 import com.flowacademy.lib.SinonymHandler;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
@@ -28,28 +29,36 @@ public class CommandHandler {
     public static void commander(String input, HashMap<String, GameFieldTemplate> map, GameFieldTemplate actualField, String filePath, String[] args){
 
         if (northSinonymSet.contains(input)){
+            AutoSaveLoad.autoLoad("autosave_","./FlowAdventuresDataFiles/");
             PlayMain.setActualField(Movement.moveNorth(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
+            MapDrawer.drawMap();
         } else if (southSinonymSet.contains(input)){
+            AutoSaveLoad.autoLoad("autosave_","./FlowAdventuresDataFiles/");
             PlayMain.setActualField(Movement.moveSouth(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
+            MapDrawer.drawMap();
         } else if (eastSinonymSet.contains(input)){
+            AutoSaveLoad.autoLoad("autosave_","./FlowAdventuresDataFiles/");
             PlayMain.setActualField(Movement.moveEast(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
+            MapDrawer.drawMap();
         } else if (westSinonymSet.contains(input)){
+            AutoSaveLoad.autoLoad("autosave_","./FlowAdventuresDataFiles/");
             PlayMain.setActualField(Movement.moveWest(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
+            MapDrawer.drawMap();
         } else if (quitSinonymSet.contains(input)){
             PlayMain.setQuitted(true);
         } else if (positionSinonymSet.contains(input)){
             HUD.hud(map, actualField);
         } else if (input.equals("menu")){
             GameMenu.gameMenu(map,actualField, filePath, args);
-        } else if (input.equals("drawmap")){
+        } else if (input.equals("map") || input.equals("drawmap")){
             MapDrawer.drawMap();
         }
     }
