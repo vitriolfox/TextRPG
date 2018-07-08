@@ -88,7 +88,7 @@ public class AutoSaveLoad {
                     objectMapper.writeValueAsString(PlayMain.getPlayerCharacter())+"\n");
 
             for (String gameField : mapToSave.keySet()) {
-                    String out = objectMapper.writeValueAsString(GameFieldEncoder.encodeGameField(mapToSave.get(gameField)).replaceAll(",""));
+                    String out = objectMapper.writeValueAsString(GameFieldEncoder.encodeGameField(mapToSave.get(gameField)).replaceAll("\"",""));
                     objectMapper.writeValue(new File(savePath + mapName + ".fmap"), out);
                     bw.write(out);
 
@@ -137,21 +137,23 @@ public class AutoSaveLoad {
 
                 while ((line = br.readLine()) != null) {
                     String[] splittedBlock;
-                    splittedline = line.split("/");
+                    splittedline = line.split("\"");
 
                     for(int i=0; i <= splittedline.length-1; i++){
 
-                        splittedBlock = splittedline[i].split(":");
-                        gameField = GameFieldCreator.createGameField(splittedBlock);
-                        int mapX = Integer.parseInt(splittedBlock[0]);
-                        int mapY = Integer.parseInt(splittedBlock[1]);
+                        if (!splittedline[i].equals("")) {
+                            splittedBlock = splittedline[i].split(":");
+                            gameField = GameFieldCreator.createGameField(splittedBlock);
+                            int mapX = Integer.parseInt(splittedBlock[0]);
+                            int mapY = Integer.parseInt(splittedBlock[1]);
 
-                        Integer xMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapX);
-                        Integer yMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapY);
-                        String gameFieldKey = GameFieldKeyGenerator.gameFieldKeyGenerator(xMultiply, yMultiply);
+                            //Integer xMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapX);
+                            //Integer yMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapY);
+                            String gameFieldKey = GameFieldKeyGenerator.gameFieldKeyGenerator(mapX, mapY);
 
-                        map.put(gameFieldKey, gameField);
-                        map.get(gameFieldKey).setId(gameFieldKey);
+                            map.put(gameFieldKey, gameField);
+                            map.get(gameFieldKey).setId(gameFieldKey);
+                        }
 
                     }
                 }
