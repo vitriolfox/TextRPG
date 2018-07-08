@@ -3,6 +3,7 @@ package com.flowacademy.lib;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.flowacademy.PlayMain;
 import com.flowacademy.models.Gamefield.Fields.Grassfields;
+import com.flowacademy.models.Gamefield.Fields.Rivers;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
 import com.flowacademy.models.Player.Player;
 import com.flowacademy.models.Player.PlayerClasses.Barbarian;
@@ -12,13 +13,67 @@ import com.flowacademy.models.Player.PlayerClasses.Thief;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Map {
 
+    public static void infinitMap(String[] args, String jsonPath) {
+
+        // ArrayList <ArrayList<GameFieldTemplate>> infinitMap = new ArrayList<>();
+        GameFieldTemplate[][] map;
+        if (args.length == 1) {
+            try {
+                String mapName = args[0];
+                GameFieldTemplate gameField;
+                BufferedReader br = new BufferedReader(new FileReader(jsonPath + mapName + ".fmap"));
+                String line = br.readLine();
+                String[] splittedline = line.split("_");
+                PlayMain.setMapMaxX(Integer.parseInt(splittedline[1]));
+                PlayMain.setMapMaxY(Integer.parseInt(splittedline[2]));
+                map = new GameFieldTemplate[PlayMain.getMapMaxX()][PlayMain.getMapMaxY()];
+                int actualFieldX = Integer.parseInt(splittedline[3]);
+                int actualFieldY = Integer.parseInt(splittedline[4]);
+                PlayMain.setTurnNumber(Integer.parseInt(splittedline[5]));
+                line = br.readLine();
+                splittedline = line.split("_");
+                PlayMain.setProloge(splittedline[1]);
+                line = br.readLine();
+                splittedline = line.split("_");
+                PlayMain.setEpiloge(splittedline[1]);
+
+
+                while ((line = br.readLine()) != null) {
+                    String[] splittedBlock;
+                    splittedline = line.split("/");
+
+                    for(int i=0; i <= splittedline.length-1; i++){
+
+                        splittedBlock = splittedline[i].split(":");
+                        gameField = GameFieldCreator.createGameField(splittedBlock);
+                        int mapX = Integer.parseInt(splittedBlock[0]);
+                        int mapY = Integer.parseInt(splittedBlock[1]);
+
+
+                        map[mapX][mapY] = gameField;
+
+                    }
+                }
+
+                PlayMain.setMap(map);
+                PlayMain.setActualField(map[actualFieldX][actualFieldY]);
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        } else {
+            System.out.println("Incorrect starting parameters!");
+        }
+    }
+
     public static void newMap(String[] args, String jsonPath) {
 
-        //Az alap térképnevet (TestMap_3x3_shortform) az arg0 tartalmazza, előre bekonfigurálva
+        //Az alap térképnevet (TestMap_10x10_shortform) az arg0 tartalmazza, előre bekonfigurálva
 
         GameFieldTemplate[][] map;
         if (args.length == 1) {
@@ -44,24 +99,17 @@ public class Map {
 
                 while ((line = br.readLine()) != null) {
                     String[] splittedBlock;
-                    //ObjectMapper objectMapper = new ObjectMapper();
-                    //gameField = objectMapper.readValue(line, GameFieldTemplate.class);
-                    //map[gameField.getX()][gameField.getY()] = gameField;
                     splittedline = line.split("/");
-                    for(int i=0; i <= splittedline.length-1; i++){
-                        splittedBlock = splittedline[i].split(":");
-                        if(splittedBlock[2].equals("G")){
-                            int mapX = Integer.parseInt(splittedBlock[0]);
-                            int mapY = Integer.parseInt(splittedBlock[1]);
-                            boolean accessible;
-                            if(splittedBlock[5].equals("1")){
-                                accessible = true;
-                                map[mapX][mapY] = new Grassfields(mapX, mapY, accessible);
-                            }
-                        } else {
-                            System.out.println("Elhasalt a MapSign azonosító felismerése");
-                        }
 
+                    for(int i=0; i <= splittedline.length-1; i++){
+
+                        splittedBlock = splittedline[i].split(":");
+                        gameField = GameFieldCreator.createGameField(splittedBlock);
+                        int mapX = Integer.parseInt(splittedBlock[0]);
+                        int mapY = Integer.parseInt(splittedBlock[1]);
+
+
+                        map[mapX][mapY] = gameField;
 
                     }
                 }

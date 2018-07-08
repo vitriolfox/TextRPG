@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be66b1aa-f70d-4293-8a41-f210cdf6b87e" name="Default" comment="" />
+    <list default="true" id="be66b1aa-f70d-4293-8a41-f210cdf6b87e" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_10x10_shortform.fmap" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/lib/GameFieldCreator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameFieldCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_3x3_shortform.fmap" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/controls/Movement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/controls/Movement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/lib/FieldIndexValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/lib/FieldIndexValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/lib/GameMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/lib/GameMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/lib/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/lib/Map.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/models/Gamefield/Fields/Grassfields.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/models/Gamefield/Fields/Grassfields.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/models/Gamefield/Fields/Rivers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/models/Gamefield/Fields/Rivers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/models/Gamefield/Fields/Roads.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/models/Gamefield/Fields/Roads.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/models/Gamefield/Fields/Woods.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/models/Gamefield/Fields/Woods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/models/Gamefield/GameFieldTemplate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/models/Gamefield/GameFieldTemplate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/views/FieldViewer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/views/FieldViewer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/views/MapDrawer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/views/MapDrawer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/controls/Movement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/controls/Movement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/FieldIndexValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/FieldIndexValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Grassfields.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Grassfields.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Rivers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Rivers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Roads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Roads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Woods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Woods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/GameFieldTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/GameFieldTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/views/FieldViewer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/views/FieldViewer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapDrawer.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -54,62 +83,121 @@
     </system>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/Map.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FieldViewer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/FieldViewer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="14" column="89" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HUD.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" column="89" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FieldIndexValidator.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/FieldIndexValidator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Grassfields.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Grassfields.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameFieldTemplate.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/GameFieldTemplate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.57330006">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="FieldViewer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/FieldViewer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="13" column="114" selection-start-line="13" selection-start-column="114" selection-end-line="13" selection-end-column="114" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Movement.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/controls/Movement.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="21" column="93" selection-start-line="21" selection-start-column="93" selection-end-line="21" selection-end-column="93" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MapDrawer.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapDrawer.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="180">
+                  <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Map.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/Map.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GameMenu.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameMenu.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GameFieldCreator.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameFieldCreator.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="660">
+                  <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Roads.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Roads.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="570">
+                  <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MapColors.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapColors.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="56" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Grassfields.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Grassfields.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="435">
+                  <caret line="32" column="5" selection-start-line="8" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="TestMap_10x10_shortform.fmap" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_10x10_shortform.fmap">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -488,16 +576,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Item/Items/Tusk.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Npc/Npcs/WildHog.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Npc/NpcTemplate.java" />
         <option value="$PROJECT_DIR$/FlowAdventuresDataFiles/game.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Item/Item.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/beans/Gamefield/GameFieldTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Rivers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Caves.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Roads.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Woods.java" />
         <option value="$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/map.java" />
         <option value="$PROJECT_DIR$/FlowAdventuresDataFiles/TestSaveMap.json" />
@@ -528,17 +610,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/controls/CommandHandler.java" />
         <option value="$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_3_3_Kakikaka.fmap" />
         <option value="$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_10_10_Kakikaka.fmap" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/controls/Movement.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameMenu.java" />
         <option value="$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_10_10_new.fmap" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/Map.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/FieldIndexValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/views/FieldViewer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapColors.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Grassfields.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/GameFieldTemplate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapDrawer.java" />
         <option value="$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_3x3_shortform.fmap" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/GameFieldTemplate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Rivers.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/FieldIndexValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Grassfields.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Woods.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Roads.java" />
+        <option value="$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_10x10_shortform.fmap" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameFieldCreator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/views/FieldViewer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/controls/Movement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapDrawer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/Map.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -560,8 +648,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -607,6 +693,24 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="flowacademy" type="462c0819:PsiDirectoryNode" />
+              <item name="controls" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FLOW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FLOW" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="flowacademy" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FLOW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FLOW" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="flowacademy" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -637,12 +741,35 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="flowacademy" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="Player" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FLOW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FLOW" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="flowacademy" type="462c0819:PsiDirectoryNode" />
+              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="Player" type="462c0819:PsiDirectoryNode" />
+              <item name="PlayerClasses" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FLOW" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FLOW" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="flowacademy" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -693,7 +820,7 @@
     <configuration name="PlayMainGo" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.flowacademy.PlayMain" />
       <module name="FLOW_main" />
-      <option name="PROGRAM_PARAMETERS" value="TestMap_3x3_shortform" />
+      <option name="PROGRAM_PARAMETERS" value="TestMap_10x10_shortform" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -779,6 +906,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-3" y="25" width="1286" height="778" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -787,12 +915,12 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5046875" side_tool="true" weight="0.3258595" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49626467" weight="0.3956044" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49626467" weight="0.44810745" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49895832" weight="0.32662538" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49895832" visible="true" weight="0.32662538" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21069692" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14667746" />
       <window_info anchor="right" id="Gradle" order="1" weight="0.24599786" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -824,14 +952,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameMenu.java</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="103" />
     </breakpoint-manager>
   </component>
@@ -840,11 +960,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Rivers.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Caves.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Roads.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Woods.java" />
-    <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_10-12-2017.json" />
     <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_11-12-2017.json" />
     <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_10_10_11-12-2017.json" />
     <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_3_3_Bálint.json" />
@@ -857,7 +972,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Player/Player.java" />
     <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_3_3_31-12-2017.fmap" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/InputScanner.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/SinonymHandler.java" />
     <entry file="file://$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_8_0_beta2.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
@@ -878,52 +992,77 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Player/PlayerClasses/Mage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Player/PlayerClasses/Paladin.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Player/PlayerClasses/Thief.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Player/PlayerClasses/Barbarian.java" />
     <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/saved-game.txt" />
     <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/game.txt" />
     <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_3_3_Kakikula.fmap" />
     <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_3_3_kaki.fmap" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/controls/CommandHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/controls/Movement.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/GameMatrix.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/PlayerCreator.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/PlayMain.java" />
     <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_3_3.fmap" />
     <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_10_10_new.fmap" />
-    <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_10_10_Kakikaka.fmap" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/PlayerCreator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="79" column="50" selection-start-line="79" selection-start-column="50" selection-end-line="79" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/FieldIndexValidator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="31" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapColors.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Grassfields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="60">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/GameFieldTemplate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        <state relative-caret-position="285">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Rivers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="30" column="103" selection-start-line="30" selection-start-column="103" selection-end-line="30" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/FieldIndexValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="29" column="114" selection-start-line="29" selection-start-column="114" selection-end-line="29" selection-end-column="114" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Woods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_10_10_Kakikaka.fmap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Player/PlayerClasses/Barbarian.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="31" lean-forward="true" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/SinonymHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/controls/CommandHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -934,15 +1073,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/FieldViewer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Grassfields.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="89" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="89" />
+        <state relative-caret-position="435">
+          <caret line="32" column="5" selection-start-line="8" selection-start-column="4" selection-end-line="32" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapDrawer.java" />
-    <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_3x3_shortform.fmap" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapColors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/models/Gamefield/Fields/Roads.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameFieldCreator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_10x10_shortform.fmap">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/FieldViewer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="114" selection-start-line="13" selection-start-column="114" selection-end-line="13" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/controls/Movement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="93" selection-start-line="21" selection-start-column="93" selection-end-line="21" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapDrawer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="gradleExecuteTaskHistory">
     <option value="" />
