@@ -24,11 +24,11 @@ public class AutoSaveLoad {
                 BufferedReader br = new BufferedReader(new FileReader(jsonPath + mapName + ".fmap"));
                 String line = br.readLine();
                 String[] splittedline = line.split("_");
-                PlayMain.setMapMaxX(Integer.parseInt(splittedline[1]));
-                PlayMain.setMapMaxY(Integer.parseInt(splittedline[2]));
-                int actualFieldX = Integer.parseInt(splittedline[3]);
-                int actualFieldY = Integer.parseInt(splittedline[4]);
-                PlayMain.setTurnNumber(Integer.parseInt(splittedline[5]));
+                //PlayMain.setMapMaxX(Integer.parseInt(splittedline[1]));
+                //PlayMain.setMapMaxY(Integer.parseInt(splittedline[2]));
+                int actualFieldX = Integer.parseInt(splittedline[1]);
+                int actualFieldY = Integer.parseInt(splittedline[2]);
+                PlayMain.setTurnNumber(Integer.parseInt(splittedline[3]));
                 line = br.readLine();
                 splittedline = line.split("_");
                 PlayMain.setProloge(splittedline[1]);
@@ -48,21 +48,19 @@ public class AutoSaveLoad {
                         int mapX = Integer.parseInt(splittedBlock[0]);
                         int mapY = Integer.parseInt(splittedBlock[1]);
 
-                        Integer xMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapX);
-                        Integer yMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapY);
-                        String gameFieldKey = GameFieldKeyGenerator.gameFieldKeyGenerator(xMultiply, yMultiply);
-
+                        //Integer xMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapX);
+                        //Integer yMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapY);
+                        String gameFieldKey = GameFieldKeyGenerator.gameFieldKeyGenerator(mapX, mapY);
+                        gameField.setId(gameFieldKey);
                         map.put(gameFieldKey, gameField);
-                        map.get(gameFieldKey).setId(gameFieldKey);
+                        PlayMain.setMap(map);
 
                     }
                 }
 
-                PlayMain.setMap(map);
-
-                Integer actualXMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldX);
-                Integer actualYMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldY);
-                PlayMain.setActualField(map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(actualXMultiply, actualYMultiply)));
+                //Integer actualXMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldX);
+                //Integer actualYMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldY);
+                PlayMain.setActualField(map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(actualFieldX,actualFieldY)));
                 String[] mapnameArg = new String[1];
                 mapnameArg[0] = "autosave_";
                 autoSave(map,"./FlowAdventuresDataFiles/",mapnameArg);
@@ -81,8 +79,7 @@ public class AutoSaveLoad {
 
         try {
             BufferedWriter bw = new BufferedWriter(new FileWriter(savePath + mapName + ".fmap"));
-            bw.write("MaxX,MaxY,StartingX,StartingY,TurnNumber:_"+PlayMain.getMapMaxX()+"_"+PlayMain.getMapMaxY()+
-                    "_"+PlayMain.getActualField().getX()+"_"+PlayMain.getActualField().getY()+"_"+PlayMain.getTurnNumber()+"\n"+
+            bw.write("StartingX,StartingY,TurnNumber:_"+PlayMain.getActualField().getX()+"_"+PlayMain.getActualField().getY()+"_"+PlayMain.getTurnNumber()+"\n"+
                     "Prologe:_"+PlayMain.getProloge()+"\n"+
                     "Epiloge:_"+PlayMain.getEpiloge()+"\n"+
                     objectMapper.writeValueAsString(PlayMain.getPlayerCharacter())+"\n");
@@ -109,11 +106,11 @@ public class AutoSaveLoad {
                 BufferedReader br = new BufferedReader(new FileReader(filePath + mapName + ".fmap"));
                 String line = br.readLine();
                 String[] splittedline = line.split("_");
-                PlayMain.setMapMaxX(Integer.parseInt(splittedline[1]));
-                PlayMain.setMapMaxY(Integer.parseInt(splittedline[2]));
-                int actualFieldX = Integer.parseInt(splittedline[3]);
-                int actualFieldY = Integer.parseInt(splittedline[4]);
-                PlayMain.setTurnNumber(Integer.parseInt(splittedline[5]));
+                //PlayMain.setMapMaxX(Integer.parseInt(splittedline[1]));
+                //PlayMain.setMapMaxY(Integer.parseInt(splittedline[2]));
+                int actualFieldX = Integer.parseInt(splittedline[1]);
+                int actualFieldY = Integer.parseInt(splittedline[2]);
+                PlayMain.setTurnNumber(Integer.parseInt(splittedline[3]));
                 line = br.readLine();
                 splittedline = line.split("_");
                 PlayMain.setProloge(splittedline[1]);
@@ -150,19 +147,18 @@ public class AutoSaveLoad {
                             //Integer xMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapX);
                             //Integer yMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapY);
                             String gameFieldKey = GameFieldKeyGenerator.gameFieldKeyGenerator(mapX, mapY);
-
+                            gameField.setId(gameFieldKey);
                             map.put(gameFieldKey, gameField);
-                            map.get(gameFieldKey).setId(gameFieldKey);
+                            //map.get(gameFieldKey).setId(gameFieldKey);
+                            PlayMain.setMap(map);
                         }
 
                     }
                 }
 
-
-                PlayMain.setMap(map);
-                Integer actualXMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldX);
-                Integer actualYMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldY);
-                PlayMain.setActualField(map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(actualXMultiply, actualYMultiply)));
+                //Integer actualXMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldX);
+                //Integer actualYMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldY);
+                PlayMain.setActualField(map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(actualFieldX, actualFieldY)));
 
             } catch (IOException e) {
                 e.printStackTrace();
