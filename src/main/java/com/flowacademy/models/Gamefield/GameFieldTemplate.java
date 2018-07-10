@@ -15,7 +15,7 @@ public class GameFieldTemplate {
     protected String farDescription;
     protected NpcTemplate npc;
     protected Item item;
-    protected boolean accessable;
+    protected boolean accessable = true;
     protected String notAccessibleDescription;
 
     public GameFieldTemplate() {

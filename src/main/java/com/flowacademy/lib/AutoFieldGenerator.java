@@ -12,15 +12,15 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class AutoFieldGenerator {
 
-    public static HashMap<String, GameFieldTemplate> fieldCompositor (GameFieldTemplate actualField){
+    public static void fieldCompositor (GameFieldTemplate actualField){
 
         HashMap<String, GameFieldTemplate> map = PlayMain.getMap();
 
         Integer[] decomposedActualFieldKey = GameFieldKeyGenerator.decomposeKey(PlayMain.getActualField().getId());
-        int minimumMapRangeX = decomposedActualFieldKey[0]-5;
-        int maximumMapRangeX = decomposedActualFieldKey[0]+5;
-        int minimumMapRangeY = decomposedActualFieldKey[1]-5;
-        int maximumMapRangeY = decomposedActualFieldKey[1]+5;
+        int minimumMapRangeX = decomposedActualFieldKey[0]-2;
+        int maximumMapRangeX = decomposedActualFieldKey[0]+2;
+        int minimumMapRangeY = decomposedActualFieldKey[1]-2;
+        int maximumMapRangeY = decomposedActualFieldKey[1]+2;
 
         for (int i = minimumMapRangeY; i <= maximumMapRangeY; i++) {
             for (int j = minimumMapRangeX; j <= maximumMapRangeX; j++) {
@@ -31,7 +31,7 @@ public class AutoFieldGenerator {
         }
 
         PlayMain.setMap(map);
-        return map;
+
     }
 
     public static GameFieldTemplate generateGameField(String targetFieldid){
@@ -46,7 +46,7 @@ public class AutoFieldGenerator {
         } else if(randomNum == 3) {
             generatedField = new Woods(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1], true);
         } else if(randomNum == 4) {
-            generatedField = new Roads(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1], false);
+            generatedField = new Roads(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1], true);
         }
 
         return generatedField;

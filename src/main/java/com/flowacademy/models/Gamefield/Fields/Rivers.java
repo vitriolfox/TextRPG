@@ -13,7 +13,7 @@ public class Rivers extends GameFieldTemplate {
         this.farDescription = " folyó zúgását hallod. ";
         this.npc = npc;
         this.item = item;
-        this.accessable = accessable;
+        this.accessable = false;
         this.notAccessibleDescription = "A folyópart túl meredek, sajnos nem tudsz tovább menni erre!";
     }
 
@@ -27,7 +27,7 @@ public class Rivers extends GameFieldTemplate {
         this.farDescription = " folyó zúgását hallod. ";
         this.npc = npc;
         this.item = item;
-        this.accessable = accessable;
+        this.accessable = false;
         this.notAccessibleDescription = "A folyópart túl meredek, sajnos nem tudsz tovább menni erre!";
     }
     public Rivers() {

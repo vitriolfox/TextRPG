@@ -21,9 +21,9 @@ public class FieldIndexValidator {
     public static String fieldFarDescriptionValidator(HashMap<String, GameFieldTemplate> map, int X, int Y){
         String gameFieldKey = GameFieldKeyGenerator.gameFieldKeyGenerator(X,Y);
         if (map.get(gameFieldKey).getFarDescription() != null){
-            return "Semmi.";
-        } else {
             return map.get(gameFieldKey).getFarDescription();
+        } else {
+            return "Semmi.";
         }
     }
 
@@ -37,7 +37,7 @@ public class FieldIndexValidator {
         } else {
             String[] mapnameArg = new String[1];
             mapnameArg[0] = "autosave_";
-            AutoSaveLoad.autoSave(map,"./FlowAdventuresDataFiles/",mapnameArg);
+//            AutoSaveLoad.autoSave(map,"./FlowAdventuresDataFiles/",mapnameArg);
             return map.get(gameFieldKey);
         }
     }

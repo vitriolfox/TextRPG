@@ -15,7 +15,7 @@ public class GameFieldCreator {
         boolean accessible;
         if(splittedBlock[2].equals("G")){
 
-            if(splittedBlock[5].equals("1")) {
+            if(splittedBlock[5].equals("1") || splittedBlock[5].equals("1/")) {
                 accessible = true;
             } else {
                 accessible = false;
@@ -24,7 +24,7 @@ public class GameFieldCreator {
 
         } else if(splittedBlock[2].equals("~")){
 
-            if(splittedBlock[5].equals("1")) {
+            if(splittedBlock[5].equals("1") || splittedBlock[5].equals("1/")) {
                 accessible = true;
             } else {
                 accessible = false;
@@ -33,7 +33,7 @@ public class GameFieldCreator {
 
         } else if(splittedBlock[2].equals("W")){
 
-            if(splittedBlock[5].equals("1")) {
+            if(splittedBlock[5].equals("1") || splittedBlock[5].equals("1/")) {
                 accessible = true;
             } else {
                 accessible = false;
@@ -42,7 +42,7 @@ public class GameFieldCreator {
 
         } else if(splittedBlock[2].equals("R")){
 
-            if(splittedBlock[5].equals("1")) {
+            if(splittedBlock[5].equals("1") || splittedBlock[5].equals("1/")) {
                 accessible = true;
             } else {
                 accessible = false;

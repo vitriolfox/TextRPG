@@ -45,12 +45,12 @@ public class AutoSaveLoad {
 
                         splittedBlock = splittedline[i].split(":");
                         gameField = GameFieldCreator.createGameField(splittedBlock);
-                        int mapX = Integer.parseInt(splittedBlock[0]);
-                        int mapY = Integer.parseInt(splittedBlock[1]);
+                        int mapX = gameField.getX();
+                        int mapY = gameField.getY();
 
                         //Integer xMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapX);
                         //Integer yMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapY);
-                        String gameFieldKey = GameFieldKeyGenerator.gameFieldKeyGenerator(mapX, mapY);
+                        String gameFieldKey = splittedBlock[0] + ":" + splittedBlock[1];
                         gameField.setId(gameFieldKey);
                         map.put(gameFieldKey, gameField);
                         PlayMain.setMap(map);
@@ -63,7 +63,9 @@ public class AutoSaveLoad {
                 PlayMain.setActualField(map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(actualFieldX,actualFieldY)));
                 String[] mapnameArg = new String[1];
                 mapnameArg[0] = "autosave_";
-                autoSave(map,"./FlowAdventuresDataFiles/",mapnameArg);
+                //autoSave(map,"./FlowAdventuresDataFiles/",mapnameArg);
+
+
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -71,6 +73,7 @@ public class AutoSaveLoad {
         } else {
             System.out.println("Incorrect starting parameters!");
         }
+        PlayMain.setMap(map);
     }
 
     public static void autoSave(HashMap<String, GameFieldTemplate> mapToSave, String savePath, String[] args) {
@@ -78,15 +81,15 @@ public class AutoSaveLoad {
         String mapName = args[0];
 
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(savePath + mapName + ".fmap"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(savePath + "autosave_.fmap"));
             bw.write("StartingX,StartingY,TurnNumber:_"+PlayMain.getActualField().getX()+"_"+PlayMain.getActualField().getY()+"_"+PlayMain.getTurnNumber()+"\n"+
                     "Prologe:_"+PlayMain.getProloge()+"\n"+
                     "Epiloge:_"+PlayMain.getEpiloge()+"\n"+
                     objectMapper.writeValueAsString(PlayMain.getPlayerCharacter())+"\n");
 
             for (String gameField : mapToSave.keySet()) {
-                    String out = objectMapper.writeValueAsString(GameFieldEncoder.encodeGameField(mapToSave.get(gameField)).replaceAll("\"",""));
-                    objectMapper.writeValue(new File(savePath + mapName + ".fmap"), out);
+                    String out = objectMapper.writeValueAsString(GameFieldEncoder.encodeGameField(mapToSave.get(gameField)));
+                    objectMapper.writeValue(new File(savePath + "autosave_.fmap"), out);
                     bw.write(out);
 
             }
@@ -98,12 +101,12 @@ public class AutoSaveLoad {
     }
 
     public static void autoLoad(String mapName, String filePath) {
-        HashMap<String, GameFieldTemplate> map = null;
+        HashMap<String, GameFieldTemplate> map = new HashMap<>();
 
         if (mapName != null) {
             try {
                 GameFieldTemplate gameField;
-                BufferedReader br = new BufferedReader(new FileReader(filePath + mapName + ".fmap"));
+                BufferedReader br = new BufferedReader(new FileReader(filePath + "autosave_.fmap"));
                 String line = br.readLine();
                 String[] splittedline = line.split("_");
                 //PlayMain.setMapMaxX(Integer.parseInt(splittedline[1]));
@@ -146,7 +149,7 @@ public class AutoSaveLoad {
 
                             //Integer xMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapX);
                             //Integer yMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapY);
-                            String gameFieldKey = GameFieldKeyGenerator.gameFieldKeyGenerator(mapX, mapY);
+                            String gameFieldKey = mapX + ":" + mapY;
                             gameField.setId(gameFieldKey);
                             map.put(gameFieldKey, gameField);
                             //map.get(gameFieldKey).setId(gameFieldKey);
@@ -164,6 +167,7 @@ public class AutoSaveLoad {
                 e.printStackTrace();
             }
         }
+        PlayMain.setMap(map);
     }
 
 

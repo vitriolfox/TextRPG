@@ -29,25 +29,25 @@ public class CommandHandler {
     public static void commander(String input, HashMap<String, GameFieldTemplate> map, GameFieldTemplate actualField, String filePath, String[] args){
 
         if (northSinonymSet.contains(input)){
-            AutoSaveLoad.autoLoad("autosave_","./FlowAdventuresDataFiles/");
+            //AutoSaveLoad.autoLoad("autosave_","./FlowAdventuresDataFiles/");
             PlayMain.setActualField(Movement.moveNorth(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
             MapDrawer.drawMap();
         } else if (southSinonymSet.contains(input)){
-            AutoSaveLoad.autoLoad("autosave_","./FlowAdventuresDataFiles/");
+            //AutoSaveLoad.autoLoad("autosave_","./FlowAdventuresDataFiles/");
             PlayMain.setActualField(Movement.moveSouth(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
             MapDrawer.drawMap();
         } else if (eastSinonymSet.contains(input)){
-            AutoSaveLoad.autoLoad("autosave_","./FlowAdventuresDataFiles/");
+            //AutoSaveLoad.autoLoad("autosave_","./FlowAdventuresDataFiles/");
             PlayMain.setActualField(Movement.moveEast(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
             MapDrawer.drawMap();
         } else if (westSinonymSet.contains(input)){
-            AutoSaveLoad.autoLoad("autosave_","./FlowAdventuresDataFiles/");
+            //AutoSaveLoad.autoLoad("autosave_","./FlowAdventuresDataFiles/");
             PlayMain.setActualField(Movement.moveWest(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
