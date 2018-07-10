@@ -11,16 +11,21 @@ public class MapDrawer {
     public static void drawMap() {
 
         HashMap <String, GameFieldTemplate> playmainMap = PlayMain.getMap();
-        Integer[] decomposedActualFieldKey = GameFieldKeyGenerator.decomposeKey(PlayMain.getActualField().getId());
-        int minimumMapRangeX = decomposedActualFieldKey[0]-2;
-        int maximumMapRangeX = decomposedActualFieldKey[0]+2;
-        int minimumMapRangeY = decomposedActualFieldKey[1]-2;
-        int maximumMapRangeY = decomposedActualFieldKey[1]+2;
+
+        //Integer[] decomposedActualFieldKey = GameFieldKeyGenerator.decomposeKeyMapDrawer(PlayMain.getActualField().getId());
+        int actualX = PlayMain.getActualField().getX();
+        int actualY = PlayMain.getActualField().getY();
+        int minimumMapRangeX = actualX-2;
+        int maximumMapRangeX = actualX+2;
+        int minimumMapRangeY = actualY-2;
+        int maximumMapRangeY = actualY+2;
 
         for (int i = minimumMapRangeY; i <= maximumMapRangeY; i++) {
             for (int j = minimumMapRangeX; j <= maximumMapRangeX; j++) {
-                if (i == decomposedActualFieldKey[1] && j == decomposedActualFieldKey[0]){
+                if (i == actualY && j == actualX) {
                     System.out.printf(MapColors.ANSI_RED + "[O]" + MapColors.ANSI_RESET);
+                } else if (playmainMap.get(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)) == null){
+                    System.out.printf("0");
                 } else {
                     System.out.printf(playmainMap.get(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)).getMapColor() + "[" + playmainMap.get(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)).getMapSign() + "]" + MapColors.ANSI_RESET);
                 }

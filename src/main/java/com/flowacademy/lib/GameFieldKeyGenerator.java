@@ -16,10 +16,19 @@ public class GameFieldKeyGenerator {
     }
 
     public static Integer[] decomposeKey(String gameFieldKey){
-        String[] splittedKey = gameFieldKey.split(":");
+        String[] splittedStringKey = gameFieldKey.split(":");
         Integer[] decomposedKey = new Integer[2];
-        decomposedKey[0] = Integer.parseInt(splittedKey[0]);
-        decomposedKey[1] = Integer.parseInt(splittedKey[1]);
+        decomposedKey[0] = Integer.parseInt(splittedStringKey[0]);
+        decomposedKey[1] = Integer.parseInt(splittedStringKey[1]);
+
+        return decomposedKey;
+    }
+
+    public static Integer[] decomposeKeyMapDrawer(String gameFieldKey){
+        String[] splittedStringKey = gameFieldKey.split(":");
+        Integer[] decomposedKey = new Integer[2];
+        decomposedKey[0] = Integer.parseInt(splittedStringKey[0]);
+        decomposedKey[1] = Integer.parseInt(splittedStringKey[1]);
 
         return decomposedKey;
     }

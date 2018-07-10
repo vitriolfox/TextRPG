@@ -16,11 +16,13 @@ public class AutoFieldGenerator {
 
         HashMap<String, GameFieldTemplate> map = PlayMain.getMap();
 
-        Integer[] decomposedActualFieldKey = GameFieldKeyGenerator.decomposeKey(PlayMain.getActualField().getId());
-        int minimumMapRangeX = decomposedActualFieldKey[0]-2;
-        int maximumMapRangeX = decomposedActualFieldKey[0]+2;
-        int minimumMapRangeY = decomposedActualFieldKey[1]-2;
-        int maximumMapRangeY = decomposedActualFieldKey[1]+2;
+        //Integer[] decomposedActualFieldKey = GameFieldKeyGenerator.decomposeKey(PlayMain.getActualField().getId());
+        int actualX = PlayMain.getActualField().getX();
+        int actualY = PlayMain.getActualField().getY();
+        int minimumMapRangeX = actualX-5;
+        int maximumMapRangeX = actualX+5;
+        int minimumMapRangeY = actualY-5;
+        int maximumMapRangeY = actualY+5;
 
         for (int i = minimumMapRangeY; i <= maximumMapRangeY; i++) {
             for (int j = minimumMapRangeX; j <= maximumMapRangeX; j++) {
