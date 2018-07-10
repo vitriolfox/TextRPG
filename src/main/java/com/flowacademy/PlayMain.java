@@ -6,9 +6,7 @@ import com.flowacademy.models.Player.Player;
 import com.flowacademy.views.HUD;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Scanner;
-import java.util.Set;
 
 public class PlayMain {
 

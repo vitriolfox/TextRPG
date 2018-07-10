@@ -1,18 +1,9 @@
 package com.flowacademy.lib;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.flowacademy.PlayMain;
-import com.flowacademy.models.Gamefield.Fields.Grassfields;
-import com.flowacademy.models.Gamefield.Fields.Rivers;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
-import com.flowacademy.models.Player.Player;
-import com.flowacademy.models.Player.PlayerClasses.Barbarian;
-import com.flowacademy.models.Player.PlayerClasses.Mage;
-import com.flowacademy.models.Player.PlayerClasses.Paladin;
-import com.flowacademy.models.Player.PlayerClasses.Thief;
 
 import java.io.*;
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class Map {

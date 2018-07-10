@@ -2,7 +2,6 @@ package com.flowacademy.models.Gamefield;
 
 import com.flowacademy.models.Item.Item;
 import com.flowacademy.models.Npc.NpcTemplate;
-import com.flowacademy.views.MapColors;
 
 public class GameFieldTemplate {
     protected int x;

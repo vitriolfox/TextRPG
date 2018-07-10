@@ -13,9 +13,9 @@ public class GameFieldEncoder {
             accessableCode = "0";
         }
 
-        Integer[] decomposedFieldKey = GameFieldKeyGenerator.decomposeKey(gameField.getId());
-        String decomposedStringX = Integer.toString(decomposedFieldKey[0]);
-        String decomposedStringY = Integer.toString(decomposedFieldKey[1]);
+        String decomposedStringX = Integer.toString(gameField.getX());
+        String decomposedStringY = Integer.toString(gameField.getY());
+
         String gameFieldCode = decomposedStringX + ":" + decomposedStringY + ":" + gameField.getMapSign() + ":" + "-" + ":" + "-" + ":" + accessableCode + "/";
 
 

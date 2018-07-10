@@ -13,6 +13,7 @@ public class GameFieldCreator {
         int mapX = Integer.parseInt(splittedBlock[0]);
         int mapY = Integer.parseInt(splittedBlock[1]);
         boolean accessible;
+
         if(splittedBlock[2].equals("G")){
 
             if(splittedBlock[5].equals("1") || splittedBlock[5].equals("1/")) {

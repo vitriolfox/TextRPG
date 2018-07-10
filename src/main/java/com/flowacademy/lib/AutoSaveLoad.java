@@ -14,18 +14,16 @@ import java.util.HashMap;
 
 public class AutoSaveLoad {
 
-    public static void initMap(String[] args, String jsonPath) {
+    public static void initMap() {
 
         HashMap<String, GameFieldTemplate> map = new HashMap<>();
-        if (args.length == 1) {
+
             try {
-                String mapName = args[0];
+                String mapName = "FlowAdventuresDataFiles/TestMap_10x10_shortform.fmap";
                 GameFieldTemplate gameField;
-                BufferedReader br = new BufferedReader(new FileReader(jsonPath + mapName + ".fmap"));
+                BufferedReader br = new BufferedReader(new FileReader(mapName));
                 String line = br.readLine();
                 String[] splittedline = line.split("_");
-                //PlayMain.setMapMaxX(Integer.parseInt(splittedline[1]));
-                //PlayMain.setMapMaxY(Integer.parseInt(splittedline[2]));
                 int actualFieldX = Integer.parseInt(splittedline[1]);
                 int actualFieldY = Integer.parseInt(splittedline[2]);
                 PlayMain.setTurnNumber(Integer.parseInt(splittedline[3]));
@@ -45,11 +43,6 @@ public class AutoSaveLoad {
 
                         splittedBlock = splittedline[i].split(":");
                         gameField = GameFieldCreator.createGameField(splittedBlock);
-                        int mapX = gameField.getX();
-                        int mapY = gameField.getY();
-
-                        //Integer xMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapX);
-                        //Integer yMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapY);
                         String gameFieldKey = splittedBlock[0] + ":" + splittedBlock[1];
                         gameField.setId(gameFieldKey);
                         map.put(gameFieldKey, gameField);
@@ -58,21 +51,16 @@ public class AutoSaveLoad {
                     }
                 }
 
-                //Integer actualXMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldX);
-                //Integer actualYMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldY);
                 PlayMain.setActualField(map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(actualFieldX,actualFieldY)));
                 String[] mapnameArg = new String[1];
                 mapnameArg[0] = "autosave_";
-                //autoSave(map,"./FlowAdventuresDataFiles/",mapnameArg);
 
 
 
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        } else {
-            System.out.println("Incorrect starting parameters!");
-        }
+
         PlayMain.setMap(map);
     }
 
@@ -81,7 +69,7 @@ public class AutoSaveLoad {
         String mapName = args[0];
 
         try {
-            BufferedWriter bw = new BufferedWriter(new FileWriter(savePath + "autosave_.fmap"));
+            BufferedWriter bw = new BufferedWriter(new FileWriter("FlowAdventuresDataFiles/TestMap_10x10_shortform.fmap"));
             bw.write("StartingX,StartingY,TurnNumber:_"+PlayMain.getActualField().getX()+"_"+PlayMain.getActualField().getY()+"_"+PlayMain.getTurnNumber()+"\n"+
                     "Prologe:_"+PlayMain.getProloge()+"\n"+
                     "Epiloge:_"+PlayMain.getEpiloge()+"\n"+
@@ -89,7 +77,7 @@ public class AutoSaveLoad {
 
             for (String gameField : mapToSave.keySet()) {
                     String out = objectMapper.writeValueAsString(GameFieldEncoder.encodeGameField(mapToSave.get(gameField)));
-                    objectMapper.writeValue(new File(savePath + "autosave_.fmap"), out);
+                    objectMapper.writeValue(new File("FlowAdventuresDataFiles/TestMap_10x10_shortform.fmap"), out);
                     bw.write(out);
 
             }
@@ -106,11 +94,9 @@ public class AutoSaveLoad {
         if (mapName != null) {
             try {
                 GameFieldTemplate gameField;
-                BufferedReader br = new BufferedReader(new FileReader(filePath + "autosave_.fmap"));
+                BufferedReader br = new BufferedReader(new FileReader("FlowAdventuresDataFiles/TestMap_10x10_shortform.fmap"));
                 String line = br.readLine();
                 String[] splittedline = line.split("_");
-                //PlayMain.setMapMaxX(Integer.parseInt(splittedline[1]));
-                //PlayMain.setMapMaxY(Integer.parseInt(splittedline[2]));
                 int actualFieldX = Integer.parseInt(splittedline[1]);
                 int actualFieldY = Integer.parseInt(splittedline[2]);
                 PlayMain.setTurnNumber(Integer.parseInt(splittedline[3]));
@@ -147,20 +133,15 @@ public class AutoSaveLoad {
                             int mapX = Integer.parseInt(splittedBlock[0]);
                             int mapY = Integer.parseInt(splittedBlock[1]);
 
-                            //Integer xMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapX);
-                            //Integer yMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapY);
                             String gameFieldKey = mapX + ":" + mapY;
                             gameField.setId(gameFieldKey);
                             map.put(gameFieldKey, gameField);
-                            //map.get(gameFieldKey).setId(gameFieldKey);
                             PlayMain.setMap(map);
                         }
 
                     }
                 }
 
-                //Integer actualXMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldX);
-                //Integer actualYMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldY);
                 PlayMain.setActualField(map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(actualFieldX, actualFieldY)));
 
             } catch (IOException e) {
@@ -169,6 +150,5 @@ public class AutoSaveLoad {
         }
         PlayMain.setMap(map);
     }
-
 
 }

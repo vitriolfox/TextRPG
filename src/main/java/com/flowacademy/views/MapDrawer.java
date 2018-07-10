@@ -11,8 +11,6 @@ public class MapDrawer {
     public static void drawMap() {
 
         HashMap <String, GameFieldTemplate> playmainMap = PlayMain.getMap();
-
-        //Integer[] decomposedActualFieldKey = GameFieldKeyGenerator.decomposeKeyMapDrawer(PlayMain.getActualField().getId());
         int actualX = PlayMain.getActualField().getX();
         int actualY = PlayMain.getActualField().getY();
         int minimumMapRangeX = actualX-2;
@@ -34,8 +32,6 @@ public class MapDrawer {
         }
 
         System.out.println("+========================================================+");
-
-
 
     }
 

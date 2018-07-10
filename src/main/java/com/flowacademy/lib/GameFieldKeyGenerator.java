@@ -24,13 +24,4 @@ public class GameFieldKeyGenerator {
         return decomposedKey;
     }
 
-    public static Integer[] decomposeKeyMapDrawer(String gameFieldKey){
-        String[] splittedStringKey = gameFieldKey.split(":");
-        Integer[] decomposedKey = new Integer[2];
-        decomposedKey[0] = Integer.parseInt(splittedStringKey[0]);
-        decomposedKey[1] = Integer.parseInt(splittedStringKey[1]);
-
-        return decomposedKey;
-    }
-
 }

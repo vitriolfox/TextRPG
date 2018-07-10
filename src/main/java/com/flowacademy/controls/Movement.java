@@ -3,7 +3,6 @@ package com.flowacademy.controls;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
 
 import java.util.HashMap;
-import java.util.Set;
 
 import static com.flowacademy.lib.FieldIndexValidator.fieldMoveValidator;
 
