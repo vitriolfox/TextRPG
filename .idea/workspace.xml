@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="be66b1aa-f70d-4293-8a41-f210cdf6b87e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/controls/CommandHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/controls/CommandHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/views/HUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/views/HUD.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/views/MapDrawer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/views/MapDrawer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/controls/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/controls/CommandHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapDrawer.java" afterDir="false" />
-    </list>
+    <list default="true" id="be66b1aa-f70d-4293-8a41-f210cdf6b87e" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -66,7 +58,7 @@
       <file leaf-file-name="HUD.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-248">
+            <state relative-caret-position="-144">
               <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -745,7 +737,7 @@
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32954547" />
       <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49626467" weight="0.44932845" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49895832" weight="0.3833944" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49895832" visible="true" weight="0.3833944" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16221985" />
@@ -754,7 +746,7 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.51037854" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.51037854" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32977587" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -779,86 +771,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>54</line>
-          <properties />
-          <option name="timeStamp" value="238" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>56</line>
-          <properties />
-          <option name="timeStamp" value="239" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="240" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>57</line>
-          <properties />
-          <option name="timeStamp" value="241" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>58</line>
-          <properties />
-          <option name="timeStamp" value="242" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="243" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="244" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>61</line>
-          <properties />
-          <option name="timeStamp" value="245" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>64</line>
-          <properties />
-          <option name="timeStamp" value="246" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>66</line>
-          <properties />
-          <option name="timeStamp" value="247" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>69</line>
-          <properties />
-          <option name="timeStamp" value="248" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>70</line>
-          <properties />
-          <option name="timeStamp" value="249" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
-          <line>73</line>
-          <properties />
-          <option name="timeStamp" value="250" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="251" />
     </breakpoint-manager>
     <watches-manager>
@@ -1160,7 +1072,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-248">
+        <state relative-caret-position="-144">
           <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
