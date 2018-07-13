@@ -4,7 +4,6 @@
     <list default="true" id="be66b1aa-f70d-4293-8a41-f210cdf6b87e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/controls/CommandHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/controls/CommandHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/lib/PlayerCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/lib/PlayerCreator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/views/HUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/views/HUD.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/com/flowacademy/views/MapDrawer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/com/flowacademy/views/MapDrawer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/flowacademy/controls/CommandHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/flowacademy/controls/CommandHandler.java" afterDir="false" />
@@ -64,20 +63,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HUD.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HUD.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+            <state relative-caret-position="-248">
+              <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MapDrawer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MapDrawer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapDrawer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+            <state relative-caret-position="146">
+              <caret line="43" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -510,8 +512,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/GameMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/lib/PlayerCreator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/controls/CommandHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapDrawer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java" />
       </list>
     </option>
   </component>
@@ -532,9 +534,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -595,6 +594,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -731,6 +733,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="944" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="bottom" id="TODO" order="7" />
@@ -740,18 +743,18 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5046875" side_tool="true" weight="0.3258595" />
       <window_info anchor="right" id="Maven Projects" order="5" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49626467" visible="true" weight="0.44932845" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49626467" weight="0.44932845" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49895832" weight="0.75335777" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49895832" weight="0.3833944" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16061899" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16221985" />
       <window_info anchor="right" id="Gradle" order="1" weight="0.24599786" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Theme Preview" order="7" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.51037854" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.51037854" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.32977587" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
@@ -760,7 +763,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Build" order="11" sideWeight="0.4953125" weight="0.33333334" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32967034" />
     </layout>
   </component>
   <component name="UnknownFeatures">
@@ -776,7 +779,87 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="237" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>54</line>
+          <properties />
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>56</line>
+          <properties />
+          <option name="timeStamp" value="239" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>55</line>
+          <properties />
+          <option name="timeStamp" value="240" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>57</line>
+          <properties />
+          <option name="timeStamp" value="241" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>58</line>
+          <properties />
+          <option name="timeStamp" value="242" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>60</line>
+          <properties />
+          <option name="timeStamp" value="244" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="245" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>66</line>
+          <properties />
+          <option name="timeStamp" value="247" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="251" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -788,6 +871,7 @@
         <watch expression="map" language="JAVA" />
         <watch expression="decomposedKey[0]" language="JAVA" />
         <watch expression="decomposedKey[1]" language="JAVA" />
+        <watch expression="outputString" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -797,6 +881,11 @@
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="watch">
+      <expression>
+        <expression-string>outputString</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>decomposedKey[1]</expression-string>
         <language-id>JAVA</language-id>
@@ -825,7 +914,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FlowAdventuresDataFiles/TestMap_3_3_31-12-2017.fmap" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/lib/InputScanner.java" />
     <entry file="file://$PROJECT_DIR$/.idea/libraries/Gradle__org_slf4j_slf4j_api_1_8_0_beta2.xml" />
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
@@ -1060,17 +1148,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/MapDrawer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+        <state relative-caret-position="146">
+          <caret line="43" column="5" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="43" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/flowacademy/views/HUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-248">
+          <caret line="43" column="31" selection-start-line="43" selection-start-column="31" selection-end-line="43" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

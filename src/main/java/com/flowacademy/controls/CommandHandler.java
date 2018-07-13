@@ -28,22 +28,22 @@ public class CommandHandler {
             PlayMain.setActualField(Movement.moveNorth(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
-            //MapDrawer.drawMap();
+            //MapDrawer.drawMiniMap();
         } else if (southSinonymSet.contains(input)){
             PlayMain.setActualField(Movement.moveSouth(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
-            //MapDrawer.drawMap();
+            //MapDrawer.drawMiniMap();
         } else if (eastSinonymSet.contains(input)){
             PlayMain.setActualField(Movement.moveEast(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
-            //MapDrawer.drawMap();
+            //MapDrawer.drawMiniMap();
         } else if (westSinonymSet.contains(input)){
             PlayMain.setActualField(Movement.moveWest(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
-            //MapDrawer.drawMap();
+            //MapDrawer.drawMiniMap();
         } else if (quitSinonymSet.contains(input)){
             PlayMain.setQuitted(true);
         } else if (positionSinonymSet.contains(input)){
@@ -51,7 +51,7 @@ public class CommandHandler {
         } else if (input.equals("menu")){
             GameMenu.gameMenu(map,actualField, filePath, args);
         } else if (input.equals("map") || input.equals("drawmap")){
-            MapDrawer.drawMap();
+            MapDrawer.drawMiniMap();
         } else {
             System.out.println("Nem rétettem, valamit elpötyögtél.");
         }
