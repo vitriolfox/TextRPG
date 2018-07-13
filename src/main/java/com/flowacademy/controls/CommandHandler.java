@@ -28,22 +28,22 @@ public class CommandHandler {
             PlayMain.setActualField(Movement.moveNorth(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
-            MapDrawer.drawMap();
+            //MapDrawer.drawMap();
         } else if (southSinonymSet.contains(input)){
             PlayMain.setActualField(Movement.moveSouth(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
-            MapDrawer.drawMap();
+            //MapDrawer.drawMap();
         } else if (eastSinonymSet.contains(input)){
             PlayMain.setActualField(Movement.moveEast(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
-            MapDrawer.drawMap();
+            //MapDrawer.drawMap();
         } else if (westSinonymSet.contains(input)){
             PlayMain.setActualField(Movement.moveWest(map,actualField));
             PlayMain.setTurnNumber(PlayMain.getTurnNumber()+1);
             HUD.hud(map, PlayMain.getActualField());
-            MapDrawer.drawMap();
+            //MapDrawer.drawMap();
         } else if (quitSinonymSet.contains(input)){
             PlayMain.setQuitted(true);
         } else if (positionSinonymSet.contains(input)){

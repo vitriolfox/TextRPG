@@ -18,7 +18,10 @@ public class MapDrawer {
         int minimumMapRangeY = actualY-2;
         int maximumMapRangeY = actualY+2;
 
+        System.out.println("+========================================================+");
+
         for (int i = minimumMapRangeY; i <= maximumMapRangeY; i++) {
+            System.out.printf("                    ");
             for (int j = minimumMapRangeX; j <= maximumMapRangeX; j++) {
                 if (i == actualY && j == actualX) {
                     System.out.printf(MapColors.ANSI_RED + "[O]" + MapColors.ANSI_RESET);
@@ -31,7 +34,7 @@ public class MapDrawer {
             System.out.printf("\n");
         }
 
-        System.out.println("+========================================================+");
+        //System.out.println("+========================================================+");
 
     }
 

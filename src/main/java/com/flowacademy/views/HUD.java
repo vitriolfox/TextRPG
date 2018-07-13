@@ -12,10 +12,10 @@ public class HUD {
 
 
         System.out.println("                " + PlayMain.getPlayerCharacter().getName() + " a hős " + PlayMain.getPlayerCharacter().getProfession() + "          ");
-        System.out.println("+--------------------------------------------------------+");
-        System.out.println("Körök:" + PlayMain.getTurnNumber() + " | HP:" +
-        PlayMain.getPlayerCharacter().getHealth() + " | DMG:" + PlayMain.getPlayerCharacter().getDamage() +
-        " | DEF:" + PlayMain.getPlayerCharacter().getDefense() + " |");
+        //System.out.printf("+-----------------");
+        MapDrawer.drawMap();
+        //System.out.printf("-----------------+");
+        System.out.println("         Körök:" + PlayMain.getTurnNumber() + " | HP:" + PlayMain.getPlayerCharacter().getHealth() + " | DMG:" + PlayMain.getPlayerCharacter().getDamage() + " | DEF:" + PlayMain.getPlayerCharacter().getDefense() + " |");
         System.out.println("+--------------------------------------------------------+\n");
 
         FieldViewer.viewer(map, actualField);
