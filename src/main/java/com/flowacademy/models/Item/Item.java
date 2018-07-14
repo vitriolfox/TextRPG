@@ -2,6 +2,7 @@ package com.flowacademy.models.Item;
 
 public class Item {
     protected String name;
+    protected String itemSign;
     protected String description;
     protected int healthModifier;
     protected int damageModifier;
@@ -17,6 +18,14 @@ public class Item {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getItemSign() {
+        return itemSign;
+    }
+
+    public void setItemSign(String itemSign) {
+        this.itemSign = itemSign;
     }
 
     public String getDescription() {

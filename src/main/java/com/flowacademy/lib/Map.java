@@ -1,27 +1,16 @@
 package com.flowacademy.lib;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.flowacademy.PlayMain;
-import com.flowacademy.models.Gamefield.Fields.Grassfields;
-import com.flowacademy.models.Gamefield.Fields.Rivers;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
-import com.flowacademy.models.Player.Player;
-import com.flowacademy.models.Player.PlayerClasses.Barbarian;
-import com.flowacademy.models.Player.PlayerClasses.Mage;
-import com.flowacademy.models.Player.PlayerClasses.Paladin;
-import com.flowacademy.models.Player.PlayerClasses.Thief;
 
 import java.io.*;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
+import java.util.*;
 
 public class Map {
 
     public static void infinitMap(String[] args, String jsonPath) {
 
-        // ArrayList <ArrayList<GameFieldTemplate>> infinitMap = new ArrayList<>();
-        GameFieldTemplate[][] map;
+        HashMap<String, GameFieldTemplate> map = new HashMap<>();
         if (args.length == 1) {
             try {
                 String mapName = args[0];
@@ -31,7 +20,7 @@ public class Map {
                 String[] splittedline = line.split("_");
                 PlayMain.setMapMaxX(Integer.parseInt(splittedline[1]));
                 PlayMain.setMapMaxY(Integer.parseInt(splittedline[2]));
-                map = new GameFieldTemplate[PlayMain.getMapMaxX()][PlayMain.getMapMaxY()];
+                //map = new GameFieldTemplate[PlayMain.getMapMaxX()][PlayMain.getMapMaxY()];
                 int actualFieldX = Integer.parseInt(splittedline[3]);
                 int actualFieldY = Integer.parseInt(splittedline[4]);
                 PlayMain.setTurnNumber(Integer.parseInt(splittedline[5]));
@@ -54,14 +43,21 @@ public class Map {
                         int mapX = Integer.parseInt(splittedBlock[0]);
                         int mapY = Integer.parseInt(splittedBlock[1]);
 
+                        Integer xMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapX);
+                        Integer yMultiply = GameFieldKeyGenerator.coordinateMultiplier(mapY);
+                        String gameFieldKey = GameFieldKeyGenerator.gameFieldKeyGenerator(xMultiply, yMultiply);
 
-                        map[mapX][mapY] = gameField;
+                        map.put(gameFieldKey, gameField);
+                        map.get(gameFieldKey).setId(gameFieldKey);
 
                     }
                 }
 
                 PlayMain.setMap(map);
-                PlayMain.setActualField(map[actualFieldX][actualFieldY]);
+
+                Integer actualXMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldX);
+                Integer actualYMultiply = GameFieldKeyGenerator.coordinateMultiplier(actualFieldY);
+                PlayMain.setActualField(map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(actualXMultiply, actualYMultiply)));
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -71,11 +67,11 @@ public class Map {
         }
     }
 
-    public static void newMap(String[] args, String jsonPath) {
+    /*public static void newMap(String[] args, String jsonPath) {
 
         //Az alap térképnevet (TestMap_10x10_shortform) az arg0 tartalmazza, előre bekonfigurálva
 
-        GameFieldTemplate[][] map;
+        Set<GameFieldTemplate> map = new HashSet<>();
         if (args.length == 1) {
             try {
                 String mapName = args[0];
@@ -85,7 +81,6 @@ public class Map {
                 String[] splittedline = line.split("_");
                 PlayMain.setMapMaxX(Integer.parseInt(splittedline[1]));
                 PlayMain.setMapMaxY(Integer.parseInt(splittedline[2]));
-                map = new GameFieldTemplate[PlayMain.getMapMaxX()][PlayMain.getMapMaxY()];
                 int actualFieldX = Integer.parseInt(splittedline[3]);
                 int actualFieldY = Integer.parseInt(splittedline[4]);
                 PlayMain.setTurnNumber(Integer.parseInt(splittedline[5]));
@@ -123,9 +118,9 @@ public class Map {
         } else {
             System.out.println("Incorrect starting parameters!");
         }
-    }
+    }*/
 
-    public static void save(GameFieldTemplate[][] mapToSave, String savePath, String[] args) {
+    /*public static void save(GameFieldTemplate[][] mapToSave, String savePath, String[] args) {
         ObjectMapper objectMapper = new ObjectMapper();
         String mapName = args[0];
         String today = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
@@ -151,9 +146,9 @@ public class Map {
             e.printStackTrace();
         }
         System.out.println("Game Saved!");
-    }
+    }*/
 
-    public static void saveAs(GameFieldTemplate[][] mapToSave, String savePath, String[] args, String nameInput) {
+   /* public static void saveAs(GameFieldTemplate[][] mapToSave, String savePath, String[] args, String nameInput) {
         ObjectMapper objectMapper = new ObjectMapper();
         String mapName = args[0];
 
@@ -230,5 +225,5 @@ public class Map {
         } else {
             System.out.println("Incorrect starting parameters!");
         }
-    }
+    }*/
 }

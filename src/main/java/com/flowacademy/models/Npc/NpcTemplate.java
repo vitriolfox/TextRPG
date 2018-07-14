@@ -4,6 +4,7 @@ import com.flowacademy.models.Item.Item;
 
 public class NpcTemplate {
     protected String name;
+    protected String npcSign;
     protected int health;
     protected int damage;
     protected int defense;
@@ -16,6 +17,14 @@ public class NpcTemplate {
     protected boolean hostile;
 
     public NpcTemplate() {
+    }
+
+    public String getNpcSign() {
+        return npcSign;
+    }
+
+    public void setNpcSign(String npcSign) {
+        this.npcSign = npcSign;
     }
 
     public String getName() {

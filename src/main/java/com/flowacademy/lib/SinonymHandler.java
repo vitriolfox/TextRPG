@@ -5,14 +5,12 @@ import java.util.Set;
 
 public class SinonymHandler {
 
-    protected static String[] northSinonymes = {"észak", "északra", "fel", "felfelé", "előre", "északfelé", "arra", "oda", "mÉ", "É"};
-    protected static String[] southSinonymes = {"dél", "délre", "le", "lefelé", "hátra", "délfelé", "erre", "ide", "mD", "D"};
-    protected static String[] eastSinonymes = {"kelet", "keletre", "jobbra", "keletfelé", "jobbkézfelé", "amarra", "amoda", "mK", "K"};
-    protected static String[] westSinonymes = {"nyugat", "nyugatra", "balra", "nyugatfelé", "balkézfelé", "emerre", "emide", "mNY", "NY"};
-
+    protected static String[] northSinonymes = {"észak", "északra", "fel", "felfelé", "előre", "északfelé", "arra", "oda", "mÉ", "É", "é", "N", "n", "North", "north"};
+    protected static String[] southSinonymes = {"dél", "délre", "le", "lefelé", "hátra", "délfelé", "erre", "ide", "mD", "D", "d", "S", "s", "South", "south"};
+    protected static String[] eastSinonymes = {"kelet", "keletre", "jobbra", "keletfelé", "jobbkézfelé", "amarra", "amoda", "mK", "K", "k", "E", "e", "East", "east"};
+    protected static String[] westSinonymes = {"nyugat", "nyugatra", "balra", "nyugatfelé", "balkézfelé", "emerre", "emide", "mNY", "NY", "ny", "W", "w", "West", "west"};
     protected static String[] quitSinonymes = {"kilép", "kilépés", "exit", "quit", "lépj ki"};
-
-    protected static String[] positionSinonymes = {"helyem", "position", "place", "map"};
+    protected static String[] positionSinonymes = {"helyem", "position", "place"};
 
     public static String[] getNorthSinonymes() {
         return northSinonymes;

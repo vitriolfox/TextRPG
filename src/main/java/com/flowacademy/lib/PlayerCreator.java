@@ -14,7 +14,7 @@ public class PlayerCreator {
         Player character = null;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Barbarian   Mage   Paladin   Thief");
+        System.out.println("Barbarian   Mage   Paladin   Thief \n");
         System.out.println("Please enter character class:");
         String scannerEntry = scanner.next();
 
@@ -26,6 +26,8 @@ public class PlayerCreator {
             character = new Paladin();
         } else if (scannerEntry.equals("Thief")){
             character = new Thief();
+        } else {
+            System.out.println("Nem értettem, valamit elpötyögtél!");
         }
 
         System.out.println("Please enter character name:");

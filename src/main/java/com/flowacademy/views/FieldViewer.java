@@ -3,9 +3,11 @@ package com.flowacademy.views;
 import com.flowacademy.lib.FieldIndexValidator;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
 
+import java.util.HashMap;
+
 public class FieldViewer {
 
-    public static void viewer(GameFieldTemplate[][] map, GameFieldTemplate actualField){
+    public static void viewer(HashMap<String, GameFieldTemplate> map, GameFieldTemplate actualField){
 
         System.out.println(actualField.getDescription());
         System.out.println("Északra" + FieldIndexValidator.fieldFarDescriptionValidator(map, (actualField.getX()), actualField.getY()-1));

@@ -2,11 +2,11 @@ package com.flowacademy.models.Gamefield;
 
 import com.flowacademy.models.Item.Item;
 import com.flowacademy.models.Npc.NpcTemplate;
-import com.flowacademy.views.MapColors;
 
 public class GameFieldTemplate {
     protected int x;
     protected int y;
+    protected String id;
     protected String name;
     protected String mapSign;
     protected String mapColor;
@@ -14,14 +14,26 @@ public class GameFieldTemplate {
     protected String farDescription;
     protected NpcTemplate npc;
     protected Item item;
-    protected boolean accessable;
+    protected boolean accessable = true;
     protected String notAccessibleDescription;
 
     public GameFieldTemplate() {
     }
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
     public String getNotAccessibleDescription() {
         return notAccessibleDescription;
+    }
+
+    public void setNotAccessibleDescription(String notAccessibleDescription) {
+        this.notAccessibleDescription = notAccessibleDescription;
     }
 
     public String getMapColor() {
