@@ -23,7 +23,7 @@ public class AutoFieldGenerator {
         for (int i = minimumMapRangeY; i <= maximumMapRangeY; i++) {
             for (int j = minimumMapRangeX; j <= maximumMapRangeX; j++) {
                 if (map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)) != null){
-                    GameFieldGeneratingRules.inspectField(j,i);
+//                    GameFieldGeneratingRules.inspectField(j,i);
                 } else if (map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)) == null){
                     map.put(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i), generateGameField(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)));
                 }

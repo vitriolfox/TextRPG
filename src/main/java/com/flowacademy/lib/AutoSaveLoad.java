@@ -34,6 +34,8 @@ public class AutoSaveLoad {
                 splittedline = line.split("_");
                 PlayMain.setEpiloge(splittedline[1]);
 
+                line = br.readLine();    //a testmapon lévő kommentsor kihagyása
+
 
                 while ((line = br.readLine()) != null) {
                     String[] splittedBlock;

@@ -6,19 +6,7 @@ import com.flowacademy.models.Npc.NpcTemplate;
 
 public class Woods extends GameFieldTemplate {
 
-   public Woods(NpcTemplate npc, Item item, boolean accessable) {
-       this.name = "Grassfields";
-       this.mapSign = "W";
-       this.mapColor = "\u001B[32m";
-       this.description = "Árnyas falombok alatt állsz.";
-       this.farDescription = " falombok zöldelnek tőled. ";
-       this.npc = npc;
-       this.item = item;
-       this.accessable = accessable;
-       this.notAccessibleDescription = "A növényzet túl sűrű, sajnos erre nem tudsz továbmenni!";
-   }
-
-    public Woods(int Xcoordinate, int Ycoordinate, boolean accessable) {
+    public Woods(int Xcoordinate, int Ycoordinate) {
         this.x = Xcoordinate;
         this.y = Ycoordinate;
         this.name = "Grassfields";
@@ -30,6 +18,7 @@ public class Woods extends GameFieldTemplate {
         this.item = item;
         this.accessable = accessable;
         this.notAccessibleDescription = "A növényzet túl sűrű, sajnos erre nem tudsz továbmenni!";
+        this.fieldProtection = true;
     }
 
     public Woods() {

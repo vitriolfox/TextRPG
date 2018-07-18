@@ -16,6 +16,7 @@ public class GameFieldTemplate {
     protected Item item;
     protected boolean accessable = true;
     protected String notAccessibleDescription;
+    protected boolean fieldProtection;
 
     public GameFieldTemplate() {
     }
@@ -114,6 +115,14 @@ public class GameFieldTemplate {
 
     public void setAccessable(boolean accessable) {
         this.accessable = accessable;
+    }
+
+    public boolean isFieldProtection() {
+        return fieldProtection;
+    }
+
+    public void setFieldProtection(boolean fieldProtection) {
+        this.fieldProtection = fieldProtection;
     }
 
     @Override
