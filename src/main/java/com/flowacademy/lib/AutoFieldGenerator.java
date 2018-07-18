@@ -40,13 +40,13 @@ public class AutoFieldGenerator {
         GameFieldTemplate generatedField = null;
 
         if(randomNum <= 60){
-            generatedField = new Grassfields(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0],GameFieldKeyGenerator.decomposeKey(targetFieldid)[1],true);
+            generatedField = new Grassfields(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0],GameFieldKeyGenerator.decomposeKey(targetFieldid)[1]);
         } else if(randomNum > 60 && randomNum <= 80) {
-            generatedField = new Woods(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1], true);
+            generatedField = new Woods(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1]);
         } else if(randomNum > 80 && randomNum <= 99) {
-            generatedField = new Roads(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1], true);
+            generatedField = new Roads(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1]);
         } else if(randomNum == 100) {
-            generatedField = new Rivers(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1], true);
+            generatedField = new Rivers(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1]);
         }
 
         return generatedField;

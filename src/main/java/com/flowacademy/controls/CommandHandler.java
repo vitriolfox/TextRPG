@@ -51,7 +51,9 @@ public class CommandHandler {
         } else if (input.equals("menu")){
             GameMenu.gameMenu(map,actualField, filePath, args);
         } else if (input.equals("map") || input.equals("drawmap")){
-            MapDrawer.drawMiniMap();
+            MapDrawer.drawMap();
+        } else if (input.equals("m10") || input.equals("map10")){
+            MapDrawer.drawLargeMap();
         } else {
             System.out.println("Nem rétettem, valamit elpötyögtél.");
         }

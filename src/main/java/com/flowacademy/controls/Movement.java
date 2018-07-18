@@ -1,5 +1,6 @@
 package com.flowacademy.controls;
 
+import com.flowacademy.lib.GameFieldGeneratingRules;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
 
 import java.util.HashMap;
@@ -9,6 +10,7 @@ import static com.flowacademy.lib.FieldIndexValidator.fieldMoveValidator;
 public class Movement {
 
     public static GameFieldTemplate moveNorth(HashMap<String, GameFieldTemplate> map, GameFieldTemplate actualField){
+        GameFieldGeneratingRules.riversNorth();
         return fieldMoveValidator(map, actualField,(actualField.getX()),(actualField.getY()-1));
     }
 
