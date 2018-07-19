@@ -1,9 +1,6 @@
 package com.flowacademy.lib;
 
-import com.flowacademy.models.Gamefield.Fields.Grassfields;
-import com.flowacademy.models.Gamefield.Fields.Rivers;
-import com.flowacademy.models.Gamefield.Fields.Roads;
-import com.flowacademy.models.Gamefield.Fields.Woods;
+import com.flowacademy.models.Gamefield.Fields.*;
 import com.flowacademy.models.Gamefield.GameFieldTemplate;
 
 public class GameFieldCreator {
@@ -29,6 +26,10 @@ public class GameFieldCreator {
         } else if(splittedBlock[2].equals("R")){
 
             gameField = new Roads(mapX, mapY);
+
+        }else if(splittedBlock[2].equals("B")){
+
+            gameField = new Bridges(mapX, mapY);
 
         } else {
             System.out.println("Elhasalt a MapSign azonosító felismerése");

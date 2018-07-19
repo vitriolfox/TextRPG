@@ -23,7 +23,7 @@ public class AutoFieldGenerator {
         for (int i = minimumMapRangeY; i <= maximumMapRangeY; i++) {
             for (int j = minimumMapRangeX; j <= maximumMapRangeX; j++) {
                 if (map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)) != null){
-//                    GameFieldGeneratingRules.inspectField(j,i);
+//                    RiverGeneratingRules.inspectField(j,i);
                 } else if (map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)) == null){
                     map.put(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i), generateGameField(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)));
                 }
@@ -36,16 +36,17 @@ public class AutoFieldGenerator {
 
     public static GameFieldTemplate generateGameField(String targetFieldid){
 
-        int randomNum = ThreadLocalRandom.current().nextInt(1, 101);
+        int randomNum = ThreadLocalRandom.current().nextInt(1, 1001);
         GameFieldTemplate generatedField = null;
 
-        if(randomNum <= 60){
+        if(randomNum <= 600){
             generatedField = new Grassfields(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0],GameFieldKeyGenerator.decomposeKey(targetFieldid)[1]);
-        } else if(randomNum > 60 && randomNum <= 80) {
+        } else if(randomNum > 600 && randomNum <= 800) {
             generatedField = new Woods(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1]);
-        } else if(randomNum > 80 && randomNum <= 99) {
-            generatedField = new Roads(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1]);
-        } else if(randomNum == 100) {
+        } //else if(randomNum > 800 && randomNum <= 999) {
+            //generatedField = new Roads(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1]);
+        //}
+        else if(randomNum == 1000) {
             generatedField = new Rivers(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1]);
         }
 

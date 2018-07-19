@@ -79,10 +79,10 @@ public class MapDrawer {
         HashMap <String, GameFieldTemplate> playmainMap = PlayMain.getMap();
         int actualX = PlayMain.getActualField().getX();
         int actualY = PlayMain.getActualField().getY();
-        int minimumMapRangeX = actualX-10;
-        int maximumMapRangeX = actualX+10;
-        int minimumMapRangeY = actualY-10;
-        int maximumMapRangeY = actualY+10;
+        int minimumMapRangeX = actualX-20;
+        int maximumMapRangeX = actualX+20;
+        int minimumMapRangeY = actualY-20;
+        int maximumMapRangeY = actualY+20;
 
         System.out.println("+========================================================+");
 
@@ -92,7 +92,7 @@ public class MapDrawer {
                 if (i == actualY && j == actualX) {
                     System.out.printf(MapColors.ANSI_RED + "[O]" + MapColors.ANSI_RESET);
                 } else if (playmainMap.get(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)) == null){
-                    System.out.printf("   ");
+                    System.out.printf(MapColors.ANSI_PURPLE + "[ ]" + MapColors.ANSI_RESET);
                 } else {
                     System.out.printf(playmainMap.get(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)).getMapColor() + "[" + playmainMap.get(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)).getMapSign() + "]" + MapColors.ANSI_RESET);
                 }
