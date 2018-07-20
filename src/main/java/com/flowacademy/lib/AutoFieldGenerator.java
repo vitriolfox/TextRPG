@@ -23,7 +23,6 @@ public class AutoFieldGenerator {
         for (int i = minimumMapRangeY; i <= maximumMapRangeY; i++) {
             for (int j = minimumMapRangeX; j <= maximumMapRangeX; j++) {
                 if (map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)) != null){
-//                    RiverGeneratingRules.inspectField(j,i);
                 } else if (map.get(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)) == null){
                     map.put(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i), generateGameField(GameFieldKeyGenerator.gameFieldKeyGenerator(j,i)));
                 }
@@ -47,10 +46,21 @@ public class AutoFieldGenerator {
             //generatedField = new Roads(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1]);
         //}
         else if(randomNum == 1000) {
-            generatedField = new Rivers(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1]);
+            generatedField = new Lakes(GameFieldKeyGenerator.decomposeKey(targetFieldid)[0], GameFieldKeyGenerator.decomposeKey(targetFieldid)[1]);
         }
 
         return generatedField;
+    }
+
+
+
+    public static void riverPatternGenerator(String directionNSEW){
+        int randomNum = ThreadLocalRandom.current().nextInt(1, 1001);
+
+
+        if (randomNum > 900){
+            GameFieldPatternLoader.loadPatternRelativeToPlayer("FlowAdventuresDataFiles/FieldPatterns/RiverPatterns/", directionNSEW);
+        }
     }
 
 }
